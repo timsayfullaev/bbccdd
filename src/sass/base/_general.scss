@@ -2,13 +2,18 @@
     font-family: 'Montserrat';
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas Neue';
+body {
+    color: $dark;
 }
 
 a {
     color: $accent;
+    text-decoration: underline;
     &:hover {
         color: $accent_hover;
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue';
 }

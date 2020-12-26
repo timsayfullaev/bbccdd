@@ -1,0 +1,43 @@
+.btn {
+    text-decoration: none;
+    border-color: $accent;
+    border-radius: 32px;
+    border-width: 2px;
+    background-color: $accent;
+    color: $light;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:hover {
+        color: $light;
+        background-color: $accent_hover;
+        border-color: $accent_hover;
+    }
+    &:active {
+        background-color: $accent_active;
+        border-color: $accent_active;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    &_outline {
+        background: none;
+        color: $accent;
+        &:hover {
+            color: $light;
+            background-color: $accent;
+            border-color: $accent;
+        }
+        &:active {
+            color: $light;
+            background-color: $accent_hover;
+            border-color: $accent_hover;
+        }
+    }
+    &_large {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    &_intro {
+        margin: 0 8px;
+    }
+}

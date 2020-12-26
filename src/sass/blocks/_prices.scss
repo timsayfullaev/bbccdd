@@ -1,0 +1,51 @@
+.prices {
+    padding: 80px 0;
+    &__text {
+        margin-bottom: 16px;
+        &:last-of-type {
+            margin-bottom: 48px;
+        }
+    }
+    &__item {
+        @include block_shadow;
+        border-width: 2px solid transparent;
+        border-radius: 4px;
+        padding: 32px;
+        transition: all .25s;
+        &:hover {
+            @include block_shadow_hover;
+        }
+        &_active {
+            border: 2px solid $accent;
+            @include block_shadow_hover;
+            &:hover {
+                border-color: $accent_hover;
+                @include block_shadow;
+            }
+        }
+    }
+    &__icon {
+        font-size: 32px;
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__name {
+        font-family: 'Bebas Neue';
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__links {
+        display: flex;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 8px;
+        }
+    }
+}

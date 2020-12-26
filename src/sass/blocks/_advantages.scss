@@ -1,0 +1,19 @@
+.advantages {
+    padding: 80px 0 32px 0;
+    &__item {
+        margin-bottom: 48px;
+    }
+    &__icon {
+        font-size: 32px;
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__text {
+        text-align: center;
+        span {
+            color: $accent;
+            font-weight: 600;
+        }
+    }
+}

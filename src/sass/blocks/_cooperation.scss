@@ -1,0 +1,82 @@
+.cooperation {
+    padding: 80px 0;
+    &__steps {
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 100%;
+            border-left: 4px dotted $dark;
+            position: absolute;
+            left: 22px;
+        }
+    }
+    &__step {
+        @include block_shadow;
+        border-radius: 4px;
+        padding: 32px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
+        margin-left: 80px;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::before {
+            display: block;
+            width: 48px;
+            height: 48px;
+            background-color: $accent;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -80px;
+            color: $light;
+            font-size: 26px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_1 {
+            &::before{
+                content: '1';
+            }
+        }
+        &_2 {
+            &::before{
+                content: '2';
+            }
+        }
+        &_3 {
+            &::before{
+                content: '3';
+            }
+        }
+        &_4 {
+            &::before{
+                content: '4';
+            }
+        }
+    }
+    &__icon {
+        font-size: 48px;
+        margin-right: 32px;
+    }
+    &__title {
+        font-family: 'Bebas Neue';
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+    &__text {
+        margin-bottom: 0;
+        span {
+            font-weight: 600;
+        }
+    }
+}
