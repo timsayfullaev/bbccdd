@@ -16,11 +16,11 @@
             @include block_shadow_hover;
         }
         &_active {
-            border: 2px solid $accent;
             @include block_shadow_hover;
+            border: 2px solid $accent;
             &:hover {
-                border-color: $accent_hover;
                 @include block_shadow;
+                border-color: $accent_hover;
             }
         }
     }

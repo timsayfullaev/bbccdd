@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(function () {
-        $("a[href^='#']").click(function () {
+        $("a[href^='#prices']").click(function () {
             var _href = $(this).attr("href");
             $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
             return false;
@@ -18,6 +18,37 @@ $(document).ready(function () {
         slidesToShow: 5,
         speed: 8000,
         swipe: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+    $('.partners__slider').slick({
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left    "></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right    "></i></button>',
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 1024,

@@ -2,6 +2,7 @@
 @import 'libs/all.min';
 @import 'libs/font';
 @import 'libs/slick';
+@import 'libs/jquery.fancybox.min';
 
 @import 'base/variables';
 @import 'base/mixins';
@@ -18,5 +19,6 @@
 @import 'blocks/slick-slider';
 @import 'blocks/prices';
 @import 'blocks/cooperation';
+@import 'blocks/partners';
 
 @import 'media';
