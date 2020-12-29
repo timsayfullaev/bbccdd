@@ -44,8 +44,8 @@ $(document).ready(function () {
     });
 
     $('.partners__slider').slick({
-        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left    "></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right    "></i></button>',
+        prevArrow: '<button type="button" class="slick-chevron-left"><i class="fas fa-chevron-left    "></i></button>',
+        nextArrow: '<button type="button" class="slick-chevron-right"><i class="fas fa-chevron-right    "></i></button>',
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,

@@ -73,4 +73,9 @@ gulp.task('webfonts', function () {
         .pipe(gulp.dest('dist/webfonts'))
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'mailer', 'html', 'images', 'webfonts'));
+gulp.task('slick', function () {
+    return gulp.src('src/slick/**/*')
+        .pipe(gulp.dest('dist/slick'));
+});
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'mailer', 'html', 'images', 'webfonts', 'slick'));
