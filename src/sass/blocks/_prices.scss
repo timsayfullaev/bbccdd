@@ -4,39 +4,38 @@
         margin-bottom: 16px;
         &:last-of-type {
             margin-bottom: 48px;
+        span {
+            font-weight: 600;
+        }
         }
     }
     &__item {
-        @include block_shadow;
-        border-width: 2px solid transparent;
-        border-radius: 4px;
+        border: 2px solid $border;
+        border-radius: 2px;
         padding: 32px;
-        transition: all .25s;
-        &:hover {
-            @include block_shadow_hover;
-        }
-        &_active {
-            @include block_shadow_hover;
-            border: 2px solid $accent;
-            &:hover {
-                @include block_shadow;
-                border-color: $accent_hover;
-            }
-        }
     }
     &__icon {
-        font-size: 32px;
-        display: block;
-        text-align: center;
+        border: 2px solid $border;
+        border-radius: 100%;
+        width: 64px;
+        height: 64px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 16px;
+        i {
+            font-size: 32px;
+        }
     }
     &__name {
         font-family: 'Bebas Neue';
         font-size: 36px;
         font-weight: 700;
         letter-spacing: 2px;
+        line-height: 36px;
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
     }
     &__links {
         display: flex;

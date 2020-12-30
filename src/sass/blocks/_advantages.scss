@@ -4,10 +4,18 @@
         margin-bottom: 48px;
     }
     &__icon {
-        font-size: 32px;
-        display: block;
-        text-align: center;
+        border: 2px solid $border;
+        border-radius: 100%;
+        width: 64px;
+        height: 64px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 16px;
+        i {
+            font-size: 32px;
+        }
     }
     &__text {
         text-align: center;

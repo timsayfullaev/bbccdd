@@ -1,0 +1,58 @@
+.cost {
+    padding: 80px 0;
+    &__item {
+        border: 2px solid $border;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
+        &:nth-child(even) {
+            .cost__img {
+                order: 2;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__img {
+        width: 50%;
+        padding: 32px;
+        img {
+            width: 240px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__text {
+        width: 50%;
+        padding: 32px;
+    }
+    &__title {
+        font-family: 'Bebas Neue';
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__desc {
+        margin-bottom: 16px;
+    }
+    &__retail {
+        margin-bottom: 8px;
+    }
+    &__our {
+        margin-bottom: 16px;
+        span {
+            font-weight: 600;
+        }
+    }
+    &__sale {
+        color: $accent;
+        font-size: 26px;
+        font-weight: 800;
+        text-align: center;
+    }
+}
