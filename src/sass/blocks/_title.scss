@@ -1,5 +1,4 @@
 .title {
-    color: $dark;
     text-align: center;
     margin-bottom: 64px;
     &__text {
@@ -10,30 +9,21 @@
         display: inline-block;
         position: relative;
         margin-bottom: 0;
-        &::before {
+        &::before, &::after {
             content: '';
             display: block;
             width: 112px;
-            height: 4px;
+            height: 2px;
             background-color: $accent;
             position: absolute;
-            left: -128px;
             top: 50%;
             transform: translateY(-50%);
+        }
+        &::before {
+            left: -128px;
         }
         &::after {
-            content: '';
-            display: block;
-            width: 112px;
-            height: 4px;
-            background-color: $accent;
-            position: absolute;
             right: -128px;
-            top: 50%;
-            transform: translateY(-50%);
         }
-    }
-    &_partners {
-        margin-bottom: 46px;
     }
 }

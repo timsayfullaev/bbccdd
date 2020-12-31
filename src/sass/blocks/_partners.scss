@@ -1,5 +1,5 @@
 .partners {
-    padding: 80px 0 62px 0;
+    padding: 80px 0;
     &__slider {
         padding: 0 32px;
         .slick-chevron-left, .slick-chevron-right {
@@ -32,7 +32,7 @@
         }
     }
     &__slide {
-        padding: 18px 16px;
+        padding: 0 16px;
         a {
             &:focus {
                 outline: none;

@@ -18,7 +18,8 @@
         .nav-link {
             text-decoration: none;
             color: $dark;
-            font-weight: 600;
+            font-weight: 500;
+            text-transform: uppercase;
             transition: all .25s;
             &::after {
                 content: '';

@@ -16,6 +16,7 @@
         width: 50%;
         padding: 32px;
         img {
+            border-radius: 2px;
             width: 240px;
             display: block;
             margin: 0 auto;
@@ -43,13 +44,13 @@
     &__our {
         margin-bottom: 16px;
         span {
-            font-weight: 600;
+            font-weight: 500;
         }
     }
     &__gain {
         color: $accent;
         font-size: 26px;
-        font-weight: 800;
+        font-weight: 900;
         text-align: center;
     }
 }
