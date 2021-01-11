@@ -25,5 +25,8 @@
         &::after {
             right: -128px;
         }
+        &_light {
+            color: $light;
+        }
     }
 }
