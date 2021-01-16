@@ -19,20 +19,6 @@
     &:focus {
         box-shadow: none;
     }
-    &_outline {
-        background: none;
-        color: $accent;
-        &:hover {
-            color: $light;
-            background-color: $accent;
-            border-color: $accent;
-        }
-        &:active {
-            color: $light;
-            background-color: $accent_hover;
-            border-color: $accent_hover;
-        }
-    }
     &_large {
         font-size: 26px;
         font-weight: 400;
@@ -40,5 +26,10 @@
     &_intro {
         width: 294px;
         margin: 0 8px;
+    }
+    &_prices {
+        display: block;
+        width: 106px;
+        margin: 0 auto;
     }
 }
