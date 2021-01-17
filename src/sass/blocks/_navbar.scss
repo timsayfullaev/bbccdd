@@ -1,7 +1,7 @@
 .navbar {
     &-brand {
         img {
-            width: 210px;
+            width: 160px;
         }
     }
     &-nav {
@@ -16,10 +16,8 @@
             }
         }
         .nav-link {
-            text-decoration: none;
             color: $dark;
-            font-weight: 500;
-            text-transform: uppercase;
+            font-weight: bold;
             transition: all .25s;
             &::after {
                 content: '';

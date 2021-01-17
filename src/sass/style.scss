@@ -1,6 +1,7 @@
 @import 'libs/bootstrap.min';
-@import 'libs/all.min';
 @import 'libs/font';
+@import 'libs/all.min';
+@import 'libs/animate.min';
 @import 'libs/slick';
 @import 'libs/slick-theme';
 @import 'libs/jquery.fancybox.min';
@@ -12,18 +13,17 @@
 @import 'blocks/header';
 @import 'blocks/navbar';
 @import 'blocks/intro';
-@import 'blocks/tagline';
+@import 'blocks/display';
+@import 'blocks/lead';
 @import 'blocks/btn';
 @import 'blocks/advantages';
 @import 'blocks/title';
-@import 'blocks/icon';
 @import 'blocks/brands';
+@import 'blocks/slick-slider';
 @import 'blocks/prices';
 @import 'blocks/cooperation';
 @import 'blocks/partners';
 @import 'blocks/cost';
 @import 'blocks/profit';
-@import 'blocks/reviews';
-@import 'blocks/footer';
 
 @import 'media';

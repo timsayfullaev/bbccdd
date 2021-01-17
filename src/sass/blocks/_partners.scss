@@ -1,36 +1,7 @@
 .partners {
-    background-color: $dark;
-    padding: 80px 0;
+    padding: 64px 0;
     &__slider {
         padding: 0 32px;
-        .slick-chevron-left, .slick-chevron-right {
-            border: none;
-            padding: 0;
-            background: none;
-            color: $accent;
-            font-size: 32px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1;
-            &:hover {
-                color: $accent_hover;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-        .slick-chevron-left {
-            left: 0;
-        }
-        .slick-chevron-right {
-            right: 0;
-        }
-        .slick-slide {
-            &:focus {
-                outline: none;
-            }
-        }
     }
     &__slide {
         padding: 0 16px;
@@ -39,7 +10,9 @@
                 outline: none;
             }
             img {
-                border-radius: 2px;
+                width: 100%;
+                max-width: 230px;
+                margin: 0 auto;
             }
         }
     }

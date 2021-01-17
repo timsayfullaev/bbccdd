@@ -1,35 +1,25 @@
 .btn {
-    text-decoration: none;
+    font-weight: bold;
     border-color: $accent;
-    border-radius: 2px;
     border-width: 2px;
+    border-radius: 0;
+    padding: 8px 16px;
     background-color: $accent;
     color: $light;
-    font-weight: 500;
-    text-transform: uppercase;
     &:hover {
-        color: $light;
-        background-color: $accent_hover;
         border-color: $accent_hover;
+        background-color: $accent_hover;
+        color: $light;
     }
     &:active {
-        background-color: $accent_active;
         border-color: $accent_active;
+        background-color: $accent_active;
     }
     &:focus {
         box-shadow: none;
     }
-    &_large {
-        font-size: 26px;
-        font-weight: 400;
-    }
     &_intro {
-        width: 294px;
+        width: 180px;
         margin: 0 8px;
-    }
-    &_prices {
-        display: block;
-        width: 106px;
-        margin: 0 auto;
     }
 }

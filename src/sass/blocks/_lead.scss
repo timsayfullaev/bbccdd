@@ -1,0 +1,17 @@
+.lead {
+    font-weight: normal;
+    margin-bottom: 0;
+    span {
+        font-weight: bold;
+    }
+    &_intro {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &_cooperation {
+        text-align: center;
+    }
+    &_profit {
+        text-align: center;
+    }
+}
