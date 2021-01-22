@@ -1,38 +1,50 @@
 .cooperation {
     padding: 64px 0;
-    &__steps {
+    &__line {
         position: relative;
+        margin-bottom: 48px;
         &::before {
             content: '';
             display: block;
             width: 2px;
             height: 100%;
-            background-color: $border;
+            border-left: 1px solid $border;
             position: absolute;
-            left: 16px;
+            left: 24px;
         }
     }
-    &__step {
-        border: 2px solid $border;
+    &__box {
+        border: 1px solid $border;
+        border-radius: 2px;
         padding: 32px;
         display: flex;
         align-items: center;
-        margin-left: 64px;
         margin-bottom: 32px;
+        margin-left: 80px;
         position: relative;
         &::before {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 32px;
-            height: 32px;
-            border: 2px solid $border;
+            color: $accent;
+            font-size: 26px;
+            font-weight: 300;
+            width: 48px;
+            height: 48px;
+            border: 1px solid $border;
             border-radius: 100%;
             background-color: #ffffff;
-            color: $accent;
-            font-weight: bold;
             position: absolute;
-            left: -65px;
+            left: -80px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 2px;
+            border-top: 1px solid $border;
+            position: absolute;
+            left: -32px;
         }
         &_1 {
             &::before {
@@ -54,31 +66,17 @@
                 content: '4';
             }
         }
-        &::after {
-            content: '';
-            display: block;
-            width: 32px;
-            height: 2px;
-            background-color: $border;
-            position: absolute;
-            left: -34px;
-            top: 50%;
-            transform: translateY(-50%);   
-        }
     }
     &__icon {
-        font-size: 32px;
         margin-right: 32px;
     }
     &__title {
-        font-family: 'Bebas Neue';
+        font-family: 'Comfortaa';
+        font-weight: 300;
         font-size: 26px;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
     }
-    &__descr {
+    &__desc {
         margin-bottom: 0;
-        span {
-            font-weight: bold;
-        }
     }
 }

@@ -1,0 +1,29 @@
+.block {
+    border: 1px solid $border;
+    border-radius: 2px;
+    padding: 32px;
+    &__img {
+        margin-bottom: 16px;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__desc {
+        margin-bottom: 16px;
+    }
+    &__retail {
+        margin-bottom: 8px;
+    }
+    &__our {
+        margin-bottom: 16px;
+    }
+    &__accent {
+        color: $accent;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

@@ -1,0 +1,39 @@
+.reviews {
+    text-align: center;
+    padding: 64px 0;
+    &__slider {
+        margin-bottom: 16px;
+    }
+    &__slide {
+        margin-bottom: 16px;
+    }
+    &__img {
+        width: 128px;
+        height: 128px;
+        border-radius: 100%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    &__name {
+        font-family: 'Comfortaa';
+        font-weight: 300;
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+    &__rating {
+        margin-bottom: 16px;
+        i {
+            color: $accent;
+        }
+    }
+    &__title {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    &__dignity {
+        margin-bottom: 16px;
+    }
+    &__comment {
+        margin-bottom: 0;
+    }
+}

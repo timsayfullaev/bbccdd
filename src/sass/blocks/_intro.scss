@@ -1,16 +1,11 @@
 .intro {
     background: url('../img/intro_bg.jpg') center (center/cover) no-repeat;
-    min-height: 700px;
-    height: 100vh;
     padding: 128px 0;
-    position: relative;
-    &__chevron {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 64px;
-        i {
-            font-size: 32px;
-        }
+    height: 100vh;
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 }

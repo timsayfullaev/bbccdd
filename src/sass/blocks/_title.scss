@@ -2,16 +2,14 @@
     text-align: center;
     margin-bottom: 48px;
     h2 {
-        font-size: 36px;
         display: inline-block;
         position: relative;
-        margin-bottom: 0;
         &::before, &::after {
             content: '';
             display: block;
-            width: 64px;
+            width: 72px;
             height: 2px;
-            background-color: $accent;
+            border-top: 1px solid $accent;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);

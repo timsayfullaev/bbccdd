@@ -1,0 +1,129 @@
+.navbar {
+    &-nav {
+        .nav-item {
+            &.active {
+                .nav-link {
+                    color: $accent;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .nav-link {
+            text-decoration: none;
+            color: $dark;
+            text-transform: uppercase;
+            transition: all .25s;
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background-color: $accent;
+                transition: all .25s;
+            }
+            &:hover {
+                color: $accent;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.lead {
+    font-weight: normal;
+}
+
+.btn {
+    text-decoration: none;
+    border-color: $accent;
+    background-color: $accent;
+    color: $light;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 26px;
+    &:hover {
+        border-color: $accent_hover;
+        background-color: $accent_hover;
+        color: $light;
+    }
+    &:active {
+        border-color: $accent_active;
+        background-color: $accent_active;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.img-thumbnail {
+    border-color: $border;
+    border-radius: 2px;
+}
+
+.slick-slider {
+    .slick-slide {
+        &:focus {
+            outline: none;
+        }
+        a {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .slick-arrow {
+        border: none;
+        padding: 0;
+        background: none;
+        color: $accent;
+        font-size: 32px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        &:hover {
+            color: $accent_hover;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .slick-chevron-left {
+        left: 0;
+    }
+    .slick-chevron-right {
+        right: 0;
+    }
+    .slick-round {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 0 8px;
+            &.slick-active {
+                button {
+                    background-color: $accent;
+                }
+            }
+            button {
+                border: 1px solid $accent;
+                border-radius: 100%;
+                padding: 6px;
+                background: none;
+                font-size: 0;
+                &:hover {
+                    background-color: $accent;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

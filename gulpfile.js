@@ -48,7 +48,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src('src/fonts/**/*.+(eot|ttf|woff)')
+    return gulp.src('src/fonts/**/*.+(woff|woff2)')
         .pipe(gulp.dest('dist/fonts'));
 });
 
@@ -69,7 +69,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('webfonts', function () {
-    return gulp.src('src/webfonts/**/*.+(eot|ttf|woff|woff2)')
+    return gulp.src('src/webfonts/**/*.+(woff|woff2)')
         .pipe(gulp.dest('dist/webfonts'))
 });
 

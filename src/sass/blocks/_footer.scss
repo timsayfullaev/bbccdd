@@ -1,0 +1,9 @@
+.footer {
+    background-color: $dark;
+    color: $light;
+    padding: 32px 0;
+    &__logo {
+        width: 160px;
+        margin-bottom: 16px;
+    }
+}

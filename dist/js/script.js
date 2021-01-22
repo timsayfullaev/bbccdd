@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(function () {
-        $("a[href^='#']").click(function () {
+        $("a[href^='#prices']").click(function () {
             var _href = $(this).attr("href");
             $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
             return false;
@@ -44,8 +44,8 @@ $(document).ready(function () {
     });
 
     $('.partners__slider').slick({
-        prevArrow: '<button type="button" class="slick-chevron-left"><i class="fas fa-chevron-left    "></i></button>',
-        nextArrow: '<button type="button" class="slick-chevron-right"><i class="fas fa-chevron-right    "></i></button>',
+        prevArrow: '<button type="button" class="slick-chevron-left"><i class="fas fa-angle-left    "></i></button>',
+        nextArrow: '<button type="button" class="slick-chevron-right"><i class="fas fa-angle-right    "></i></button>',
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
