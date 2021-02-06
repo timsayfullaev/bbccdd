@@ -13,7 +13,6 @@
         .nav-link {
             text-decoration: none;
             color: $dark;
-            text-transform: uppercase;
             transition: all .25s;
             &::after {
                 content: '';
@@ -55,6 +54,9 @@
     }
     &:focus {
         box-shadow: none;
+    }
+    i {
+        color: $light;
     }
     &_block {
         width: 100%;
