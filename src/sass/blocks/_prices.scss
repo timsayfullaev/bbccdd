@@ -9,10 +9,24 @@
     &__icon {
         margin-bottom: 16px;
     }
-    &__title {
+    &__name {
         font-family: 'Comfortaa';
         font-weight: 300;
         font-size: 26px;
+        margin-bottom: 8px;
+    }
+    &__title {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    &__order {
         margin-bottom: 16px;
+    }
+    &__picking {
+        margin-bottom: 16px;
+    }
+    &__download {
+        font-size: 20px;
+        margin-bottom: 8px;
     }
 }

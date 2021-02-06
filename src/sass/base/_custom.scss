@@ -42,9 +42,8 @@
     border-color: $accent;
     background-color: $accent;
     color: $light;
-    text-transform: uppercase;
     padding: 12px 24px;
-    border-radius: 26px;
+    border-radius: 2px;
     &:hover {
         border-color: $accent_hover;
         background-color: $accent_hover;
@@ -56,6 +55,9 @@
     }
     &:focus {
         box-shadow: none;
+    }
+    &_block {
+        width: 100%;
     }
 }
 

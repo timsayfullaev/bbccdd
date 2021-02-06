@@ -2,6 +2,7 @@
     background: url('../img/intro_bg.jpg') center (center/cover) no-repeat;
     padding: 128px 0;
     height: 100vh;
+    min-height: 600px;
     &__wrapper {
         height: 100%;
         display: flex;
