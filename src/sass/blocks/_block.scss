@@ -19,6 +19,9 @@
     }
     &__our {
         margin-bottom: 16px;
+        span {
+            font-weight: bold;
+        }
     }
     &__accent {
         color: $accent;
