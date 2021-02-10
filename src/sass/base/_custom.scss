@@ -63,6 +63,19 @@
     }
 }
 
+.table {
+    border-radius: 2px;
+    thead {
+        th{
+            border-bottom: none;
+        }
+    }
+    th,
+    td {
+        border: 1px solid $border;
+    }
+}
+
 .img-thumbnail {
     border-color: $border;
     border-radius: 2px;
