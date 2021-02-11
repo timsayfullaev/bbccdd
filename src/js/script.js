@@ -73,37 +73,4 @@ $(document).ready(function () {
             // instead of a settings object
         ]
     });
-
-    $('.reviews__slider').slick({
-        adaptiveHeight: true,
-        arrows: false,
-        dots: true,
-        dotsClass: 'slick-round',
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
 });
