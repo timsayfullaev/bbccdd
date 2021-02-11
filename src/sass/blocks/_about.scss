@@ -7,6 +7,9 @@
     &__icon {
         width: 40px;
         margin-right: 16px;
+        i {
+            color: $accent;
+        }
     }
     &__text {
         width: 100%;
