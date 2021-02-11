@@ -1,0 +1,37 @@
+.delivery {
+    padding: 128px 0 16px 0;
+    &__box {
+        border: 1px solid $border;
+        border-radius: 2px;
+        margin-bottom: 48px;
+    }
+    &__title {
+        font-family: 'Comfortaa';
+        font-weight: 300;
+        font-size: 26px;
+        padding: 16px;
+        border-bottom: 1px solid $border;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+    }
+    &__accent {
+        font-size: 20px;
+        span {
+            color: $accent;
+            font-weight: 700;
+        }
+    }
+    &__icon {
+        i {
+            color: $accent;
+        }
+    }
+    &__text {
+        border-top: 1px solid $border;
+        padding: 16px;
+    }
+}
