@@ -1,0 +1,14 @@
+.feedback {
+    padding: 64px 0;
+    text-align: center;
+    &__title {
+        font-family: 'Comfortaa';
+        font-weight: 300;
+        font-size: 26px;
+        margin-bottom: 16px;
+        span {
+            color: $accent;
+            font-weight: 700;
+        }
+    }
+}
