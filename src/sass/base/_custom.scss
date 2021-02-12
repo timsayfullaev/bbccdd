@@ -87,17 +87,23 @@
         justify-content: center;
         margin-bottom: 48px;
     }
-    &-link {
+    .nav-link {
+        color: $dark;
+        font-size: 20px;
+        text-decoration: none;
         &:hover {
+            color: $accent;
+            text-decoration: underline;
             border-color: transparent !important;
         }
         &.active {
+            color: $accent !important;
+            text-decoration: underline;
             border-color: transparent !important;
-            text-decoration: none;
         }
         img {
             vertical-align: text-top;
-            height: 16px;
+            height: 20px;
             border: 1px solid $border;
         }
     }

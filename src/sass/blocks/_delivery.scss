@@ -18,16 +18,26 @@
         align-items: center;
         padding: 16px;
     }
-    &__accent {
+    &__method {
         font-size: 20px;
+        width: 40%;
         span {
             color: $accent;
             font-weight: 700;
         }
     }
     &__icon {
+        width: 20%;
         i {
             color: $accent;
+        }
+    }
+    &__accent {
+        width: 20%;
+        font-size: 20px;
+        span {
+            color: $accent;
+            font-weight: 700;
         }
     }
     &__text {
