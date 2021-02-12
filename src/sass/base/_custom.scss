@@ -93,9 +93,11 @@
         }
         &.active {
             border-color: transparent !important;
+            text-decoration: none;
         }
         img {
-            height: 32px;
+            vertical-align: text-top;
+            height: 16px;
             border: 1px solid $border;
         }
     }
