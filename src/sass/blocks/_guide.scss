@@ -1,0 +1,12 @@
+.guide {
+    padding: 128px 0 64px 0;
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 64px;
+        background-color: rgba($light, .75);
+        border-radius: 100%;
+    }
+}
