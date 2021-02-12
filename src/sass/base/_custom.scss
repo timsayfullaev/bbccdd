@@ -93,18 +93,46 @@
         text-decoration: none;
         &:hover {
             color: $accent;
-            text-decoration: underline;
             border-color: transparent !important;
         }
         &.active {
             color: $accent !important;
-            text-decoration: underline;
             border-color: transparent !important;
         }
         img {
             vertical-align: text-top;
             height: 20px;
             border: 1px solid $border;
+        }
+    }
+}
+
+.accordion {
+    .card {
+        border: 1px solid $border;
+        &-header {
+            background: none;
+            padding: 16px;
+            border-bottom: 1px solid $border;
+            a {
+                display: block;
+                color: $accent;
+                font-size: 20px;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover {
+                    color: $accent;
+                }
+                &.collapsed {
+                    color: $dark;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+        &-body {
+            padding: 16px;
         }
     }
 }
