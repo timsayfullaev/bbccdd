@@ -80,6 +80,27 @@
     border-radius: 2px;
 }
 
+.nav {
+    &-tabs {
+        border-bottom: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 48px;
+    }
+    &-link {
+        &:hover {
+            border-color: transparent !important;
+        }
+        &.active {
+            border-color: transparent !important;
+        }
+        img {
+            height: 32px;
+            border: 1px solid $border;
+        }
+    }
+}
+
 .slick-slider {
     .slick-slide {
         &:focus {
