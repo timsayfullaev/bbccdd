@@ -1,7 +1,7 @@
 @media (max-width: 1199.98px) {
     .prices {
         &__name {
-            font-size: 23px;
+            font-size: 22px;
         }
     }
 
@@ -31,8 +31,33 @@
 }
 
 @media (max-width: 991.98px) {
+    .navbar {
+        &-toggler {
+            &:focus {
+                outline: none;
+            }
+        }
+        &-nav {
+            text-align: center;
+            // .nav-item {
+            //     &.active {
+            //         .nav-link {
+            //             &::before {
+            //                 display: none;
+            //             }
+            //         }
+            //     }
+            // }
+            .nav-link {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
     .display-4 {
-        font-size: 43px;
+        font-size: 42px;
     }
 
     .block {
@@ -126,8 +151,111 @@
             font-size: 20px;
         }
     }
+
+    .delivery {
+        &__icon {
+            width: auto;
+        }
+        &__accent {
+            width: auto;
+        }
+    }
 }
 
-@media (max-width: 575px) {
-    
+@media (max-width: 575.98px) {
+    .display-4 {
+        font-size: 26px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+
+    .title {
+        h1, h2 {
+            font-size: 24px;
+            &::before, &::after {
+                display: none;
+            }
+        }
+    }
+
+    .prices {
+        .text-center {
+            .btn {
+                background: none;
+                border: none;
+                padding: 0;
+                color: $accent;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .cooperation {
+        &__line {
+            &::before {
+                display: none;
+            }
+        }
+        &__box {
+            margin-left: 0;
+            flex-direction: column;
+            margin-bottom: 48px;
+            &::before {
+                top: -24px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &::after {
+                display: none;
+            }
+        }
+        &__icon {
+            margin-right: 0;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        &__title {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .block {
+        &__retail {
+            font-size: 14px;
+        }
+        &__our {
+            font-size: 14px;
+        }
+        &__accent {
+            font-size: 24px;
+        }
+    }
+
+    .nav-tabs {
+        justify-content: flex-start;
+    }
+
+    .delivery {
+        &__title {
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+
+    .accordion {
+        .card-header {
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .contacts {
+        &__title {
+            font-size: 20px;
+        }
+    }
 }
