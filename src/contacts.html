@@ -53,17 +53,14 @@
                 <h2>Контакты</h2>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <ul class="fa-ul ml-4 mb-0">
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone"></i></span><a href="tel:+">+82 10
-                                4833 7502</a> Наталья</li>
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone"></i></span><a href="tel:+">+82 10
-                                5806 2003</a> Владимир</li>
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-envelope"></i></span><a
-                                href="mailto:">info@bbccdd.ru</a></li>
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span>11, Toegye-ro
-                            56-gil, Jung-gu, Seoul</li>
-                    </ul>
+                <div class="col-md-4">
+                    <div class="contacts__title">Телефоны:</div>
+                    <a href="tel:+" class="contacts__phone mb-0">+82 10 4833 7502 <span>Наталья</span></a>
+                    <a href="tel:+" class="contacts__phone">+82 10 5806 2003 <span>Владимир</span></a>
+                    <div class="contacts__title">E-mail:</div>
+                    <a href="mailto:" class="contacts__email">info@bbccdd.ru</a>
+                    <div class="contacts__title">Адрес:</div>
+                    <div class="mb-5">11, Toegye-ro 56-gil, Jung-gu, Seoul</div>
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item mr-3"><a href="#" target="_blank" rel="noopener noreferrer"><i
                                     class="fab fa-whatsapp fa-2x  "></i></a></li>
@@ -75,31 +72,38 @@
                                     class="fab fa-telegram fa-2x  "></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
+                    <div class="contacts__title">Остались вопросы?</div>
                     <form action="">
-                        <div class="form-group">
-                            <label for="">Input</label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                                placeholder="">
-                            <small id="helpId" class="form-text text-muted">Help text</small>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="userName">Имя</label>
+                                    <input type="text" class="form-control" name="" id="userName"
+                                        aria-describedby="helpId" placeholder="Введите Ваше Имя">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="userTel">Телефон</label>
+                                    <input type="tel" class="form-control" name="" id="userTel"
+                                        aria-describedby="helpId" placeholder="Введите Ваш телефон">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="userEmail">E-mail</label>
+                                    <input type="email" class="form-control" name="" id="userEmail"
+                                        aria-describedby="helpId" placeholder="Введите Ваш E-mail">
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="">Input</label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                                placeholder="">
-                            <small id="helpId" class="form-text text-muted">Help text</small>
+                            <label for="userMessage">Сообщение</label>
+                            <textarea class="form-control" name="" id="userMessage" rows="4"
+                                placeholder="Введите Ваше сообщение"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="">Input</label>
-                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                                placeholder="">
-                            <small id="helpId" class="form-text text-muted">Help text</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="">Text Area</label>
-                          <textarea class="form-control" name="" id="" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Submit</button>
+                        <button type="submit" class="btn">Отправить</button>
                     </form>
                 </div>
             </div>

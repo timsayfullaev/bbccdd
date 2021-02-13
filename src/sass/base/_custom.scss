@@ -63,6 +63,18 @@
     }
 }
 
+.form-control {
+    border-radius: 2px;
+    border-color: $border;
+    background-color: $light;
+    padding: 12px 24px;
+    height: auto;
+    &:focus {
+        box-shadow: none;
+        border-color: $accent;
+    }
+}
+
 .table {
     thead {
         th{
