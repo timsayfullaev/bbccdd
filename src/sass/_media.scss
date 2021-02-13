@@ -1,13 +1,131 @@
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
+    .prices {
+        &__name {
+            font-size: 23px;
+        }
+    }
 
+    .block {
+        &__title {
+            font-size: 16px;
+        }
+        &__desc {
+            font-size: 14px;
+        }
+        &__retail {
+            font-size: 14px;
+        }
+        &__our {
+            font-size: 14px;
+        }
+        &__accent {
+            font-size: 20px;
+        }
+    }
+
+    .feedback {
+        &__title {
+            font-size: 20px;
+        }
+    }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
+    .display-4 {
+        font-size: 43px;
+    }
 
+    .block {
+        &__title {
+            font-size: 20px;
+        }
+        &__desc {
+            font-size: 16px;
+        }
+        &__retail {
+            font-size: 16px;
+        }
+        &__our {
+            font-size: 16px;
+        }
+        &__accent {
+            font-size: 26px;
+        }
+    }
+
+    .feedback {
+        &__title {
+            font-size: 16px;
+        }
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .footer {
+        &__tagline {
+            font-size: 14px;
+        }
+    }
+
+    .about {
+        &__box {
+            flex-direction: column;
+        }
+        &__icon {
+            margin-right: 0;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .delivery {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__method {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
+    .display-4 {
+        font-size: 32px;
+    }
 
+    .title {
+        h1, h2 {
+            font-size: 28px;
+        }
+    }
+
+    .btn {
+        &_block {
+            width: 222px;
+        }
+    }
+
+    .block {
+        &__img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    }
+
+    .feedback {
+        &__title {
+            font-size: 20px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
