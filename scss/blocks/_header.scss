@@ -1,0 +1,29 @@
+.header {
+    &-top {
+        padding: 8px 0;
+        background: $background_grey_light;
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+    &-primary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+        padding: 14px 0 18px 0;
+        &__center {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.button {
+    padding: 14px 48px;
+    border-radius: 8px;
+    background: $brand;
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid $brand;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .25s;
+    line-height: 16px;
+    &__quantity {
+        color: rgba($brand, .5)
+    }
+    &:hover {
+        background: $brand_hover;
+        border-color: $brand_hover;
+    }
+    &:active {
+        background: $brand_active;
+        border-color: $brand_active;
+    }
+    &_catalog {
+        padding: 10px 24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &_search {
+        padding: 12px 18px;
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &_outline {
+        background: none;
+        color: $brand;
+        &:hover {
+            background: none;
+            color: $brand_hover
+        }
+        &:active {
+            color: $brand_active;
+        }
+    }
+    &_pill {
+        border-radius: 30px;
+        padding: 14px 24px;
+        display: inline-flex;
+        gap: 6px;
+    }
+}

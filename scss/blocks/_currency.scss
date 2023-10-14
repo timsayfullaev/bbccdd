@@ -1,0 +1,15 @@
+.currency {
+    display: flex;
+    padding: 6px 12px;
+    gap: 8px;
+    border-radius: 8px;
+    background: $background_grey_dark;
+    align-items: center;
+    &__text {
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
