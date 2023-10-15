@@ -797,11 +797,6 @@ template {
   color: #FFFFFF;
 }
 
-.search {
-  position: relative;
-  width: 100%;
-}
-
 .input__field {
   padding: 14px 20px;
   border-radius: 8px;
@@ -836,6 +831,11 @@ template {
   margin-top: 8px;
 }
 
+.search {
+  position: relative;
+  width: 100%;
+}
+
 .category {
   display: flex;
   align-items: center;
@@ -862,6 +862,25 @@ template {
 }
 .title_small {
   font-size: 20px;
+}
+
+.tag {
+  padding: 2px 6px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-family: "Geologica";
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.tag_new {
+  background: #DB8D3F;
+}
+.tag_hit {
+  background: #41BBBB;
+}
+.tag_sale {
+  background: #07A34C;
 }
 
 .footer-primary {

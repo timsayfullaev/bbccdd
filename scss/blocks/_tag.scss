@@ -1,0 +1,18 @@
+.tag {
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: $white;
+    font-family: 'Geologica';
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    &_new {
+        background: $orange;
+    }
+    &_hit {
+        background: $success;
+    }
+    &_sale {
+        background: $green;
+    }
+}
