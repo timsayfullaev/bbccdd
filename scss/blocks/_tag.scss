@@ -1,5 +1,5 @@
 .tag {
-    padding: 2px 6px;
+    padding: 3px 6px;
     border-radius: 6px;
     color: $white;
     font-family: 'Geologica';
@@ -14,5 +14,10 @@
     }
     &_sale {
         background: $green;
+    }
+    &_absolute {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
