@@ -724,7 +724,6 @@ template {
   text-decoration: none;
   display: inline-block;
   transition: all 0.25s;
-  line-height: 16px;
   height: 48px;
 }
 .button__quantity {
