@@ -92,4 +92,35 @@
             display: block;
         }
     }
+    &_horizontal {
+        width: 485px;
+        height: 224px;
+        .product__wrapper {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product__image {
+            width: 180px;
+            height: 180px;
+        }
+        .product__body {
+            width: 265px;
+        }
+    }
+    &_vertical {
+        width: 238px;
+        height: 437px;
+        .product__wrapper {
+            padding: 12px;
+        }
+        .product__image {
+            width: 214px;
+            height: 214px;
+        }
+        .product-cost {
+            flex-direction: column;
+            gap: 3px;
+        }
+    }
 }

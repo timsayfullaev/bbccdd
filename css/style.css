@@ -986,6 +986,37 @@ template {
 .product:hover .product__footer {
   display: block;
 }
+.product_horizontal {
+  width: 485px;
+  height: 224px;
+}
+.product_horizontal .product__wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.product_horizontal .product__image {
+  width: 180px;
+  height: 180px;
+}
+.product_horizontal .product__body {
+  width: 265px;
+}
+.product_vertical {
+  width: 238px;
+  height: 437px;
+}
+.product_vertical .product__wrapper {
+  padding: 12px;
+}
+.product_vertical .product__image {
+  width: 214px;
+  height: 214px;
+}
+.product_vertical .product-cost {
+  flex-direction: column;
+  gap: 3px;
+}
 
 .footer-primary {
   padding: 60px 0 48px 0;
