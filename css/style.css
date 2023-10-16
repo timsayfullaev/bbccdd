@@ -892,6 +892,36 @@ template {
   left: 0;
 }
 
+.counter {
+  border-radius: 8px;
+  background: #F5F7F9;
+  display: inline-flex;
+  align-items: center;
+  width: 208px;
+}
+.counter__button {
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  min-width: 48px;
+  cursor: pointer;
+}
+.counter__icon {
+  width: 24px;
+}
+.counter__input {
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  font-family: "Geologica";
+  font-weight: 500;
+  padding: 12px;
+}
+
 .product {
   width: 325px;
   height: 499px;
@@ -973,6 +1003,7 @@ template {
 }
 .product__footer {
   margin-top: 18px;
+  text-align: center;
   display: none;
 }
 .product:hover .product__wrapper {
