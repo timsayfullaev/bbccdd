@@ -598,6 +598,14 @@ template {
   justify-content: space-between;
   width: 100%;
 }
+.nav-categories__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  text-wrap: nowrap;
+}
 .nav-footer {
   display: flex;
   gap: 82px;
@@ -838,15 +846,6 @@ template {
 .search {
   position: relative;
   width: 100%;
-}
-
-.category {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  text-decoration: none;
-  text-wrap: nowrap;
 }
 
 .title {
