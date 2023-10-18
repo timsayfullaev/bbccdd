@@ -692,7 +692,7 @@ template {
 .dropdown__icon {
   transition: all 0.25s;
 }
-.dropdown__content {
+.dropdown__wrapper {
   padding-top: 10px;
   position: absolute;
   left: 50%;
@@ -714,44 +714,28 @@ template {
   font-size: 14px;
   text-decoration: none;
 }
-.dropdown_hoverable:hover .dropdown__button {
+.dropdown:hover .dropdown__button {
   color: #DB0053;
 }
-.dropdown_hoverable:hover .dropdown__icon {
+.dropdown:hover .dropdown__icon {
   transform: rotate(-180deg);
 }
-.dropdown_hoverable:hover .dropdown__content {
+.dropdown:hover .dropdown__wrapper {
   display: block;
 }
 
-.currency {
-  display: flex;
-  padding: 6px 12px;
-  gap: 8px;
-  border-radius: 8px;
-  background: #E5EAEE;
-  align-items: center;
-}
-.currency__text {
-  font-size: 14px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.switch {
+.switcher {
   width: 158px;
   height: 48px;
 }
-.switch .switch__input {
+.switcher__input {
   display: none;
 }
-.switch .switch__input + .switch__label {
+.switcher__input + .switcher__label {
   height: 100%;
   width: 100%;
 }
-.switch .switch__input + .switch__label > .switch__slider {
+.switcher__input + .switcher__label > .switcher__slider {
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -765,28 +749,28 @@ template {
   font-size: 14px;
   font-weight: 700;
 }
-.switch .switch__input + .switch__label > .switch__slider:before {
+.switcher__input + .switcher__label > .switcher__slider:before {
   background-color: #41BBBB;
   color: #FFFFFF;
   left: 2px;
   z-index: 10;
   content: attr(data-unchecked);
 }
-.switch .switch__input + .switch__label > .switch__slider:after {
+.switcher__input + .switcher__label > .switcher__slider:after {
   right: 0;
   content: attr(data-checked);
 }
-.switch .switch__input:checked + .switch__label > .switch__slider:after {
+.switcher__input:checked + .switcher__label > .switcher__slider:after {
   left: 0;
   content: attr(data-unchecked);
 }
-.switch .switch__input:checked + .switch__label > .switch__slider:before {
+.switcher__input:checked + .switcher__label > .switcher__slider:before {
   left: 50%;
   content: attr(data-checked);
 }
 
-.switch .switch__input + .switch__label > .switch__slider:before,
-.switch .switch__input + .switch__label > .switch__slider:after {
+.switcher .switcher__input + .switcher__label > .switcher__slider:before,
+.switcher .switcher__input + .switcher__label > .switcher__slider:after {
   border-radius: 6px;
   height: calc(100% - 4px);
   width: calc(50% - 2px);

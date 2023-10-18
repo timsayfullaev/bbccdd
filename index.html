@@ -32,11 +32,11 @@
                                     <a href="#" class="nav-menu__link">Гарантии и возврат</a>
                                 </li>
                                 <li class="nav-menu__item">
-                                    <div class="dropdown dropdown_hoverable">
+                                    <div class="dropdown">
                                         <button class="dropdown__button">Помощь
                                             <img class="dropdown__icon" src="icons/desktop/header/dropdown.svg" alt="Развернуть">
                                         </button>
-                                        <div class="dropdown__content">
+                                        <div class="dropdown__wrapper">
                                             <div class="dropdown__links">
                                                 <a href="#" class="dropdown__link">Контакты</a>
                                                 <a href="#" class="dropdown__link">Поддержка</a>
@@ -45,11 +45,11 @@
                                     </div>
                                 </li>
                                 <li class="nav-menu__item">
-                                    <div class="dropdown dropdown_hoverable">
+                                    <div class="dropdown">
                                         <button class="dropdown__button">Партнёрам
                                             <img class="dropdown__icon" src="icons/desktop/header/dropdown.svg" alt="Развернуть">
                                         </button>
-                                        <div class="dropdown__content">
+                                        <div class="dropdown__wrapper">
                                             <div class="dropdown__links">
                                                 <a href="#" class="dropdown__link">Прайс Box</a>
                                                 <a href="#" class="dropdown__link">Выкуп Coupang</a>
@@ -60,9 +60,30 @@
                             </ul>
                         </nav>
                         <div class="currency">
-                            <img class="currency__flag" src="icons/desktop/header/usd.svg" alt="Доллар США">
-                            <div class="currency__text">USD
-                                <img class="currency__icon" src="icons/desktop/header/dropdown_currency.svg" alt="Развернуть">
+                            <button class="currency-button" onclick="currencyDropdown()">
+                                <img class="currency-button__flag" src="icons/desktop/header/usd.svg" alt="USD">
+                                <div class="currency-button__flex">
+                                    <div class="currency-button__text">USD</div>
+                                    <img class="currency-button__icon" src="icons/desktop/header/dropdown_currency.svg" alt="Развернуть">
+                                </div>
+                            </button>
+                            <div class="currency-content">
+                                <div class="currency-content__flex">
+                                    Текущий курс
+                                    $1 = 97,63 ₽
+                                    <div class="switcher">
+                                        <input class="switcher__input" id="switcherInput" type="checkbox" name="switcherInput">
+                                        <label class="switcher__label" for="switcherInput">
+                                            <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                Вы также можете оплатить заказ в долларах на наш валютный счет в Корею через SWIFT
+
+                                Комиссия оплачивается отправителем
+
+                                Узнать больше об оплате
                             </div>
                         </div>
                     </div>
@@ -445,10 +466,10 @@
     <br>
     
     <div class="container">
-        <div class="switch">
-            <input class="switch__input" id="switchInput" type="checkbox" name="switchInput">
-            <label class="switch__label" for="switchInput">
-                <div class="switch__slider" data-unchecked="USD" data-checked="RUB"></div>
+        <div class="switcher">
+            <input class="switcher__input" id="switcherInput" type="checkbox" name="switcherInput">
+            <label class="switcher__label" for="switcherInput">
+                <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
             </label>
         </div>
     </div>
