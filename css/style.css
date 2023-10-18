@@ -1026,6 +1026,7 @@ template {
   padding: 30px;
   border-radius: 18px;
   position: absolute;
+  transition: all 0.25s;
 }
 .product__header {
   position: relative;
