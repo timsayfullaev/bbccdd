@@ -74,6 +74,54 @@
             text-wrap: nowrap;
         }
     }
+    &-catalog {
+        padding: 24px 0 60px 0;
+        border-radius: 0px 0px 18px 18px;
+        background: $white;
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__wrapper {
+            border-right: 1px solid $line;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding-right: 60px;
+        }
+        &-categories {
+            list-style-type: none;
+            &__link {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 10px 12px;
+            }
+            &__icon {
+                width: 24px;
+                height: 24px;
+            }
+            &__text {
+                display: flex;
+                align-items: baseline;
+                font-family: 'Geologica';
+                font-weight: 500;
+                gap: 8px;
+            }
+            &__count {
+                color: $text_grey;
+                font-family: 'Nunito Sans';
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        &__products {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
     &-footer {
         display: flex;
         gap: 82px;
