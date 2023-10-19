@@ -84,7 +84,7 @@
     }
     &:hover {
         .product__wrapper {
-            box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.10);
+            @include box_shadow;
             z-index: 1;
         }
         .product__favorite {

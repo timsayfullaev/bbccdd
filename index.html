@@ -67,10 +67,12 @@
                                     <img class="currency-button__icon" src="icons/desktop/header/dropdown_currency.svg" alt="Развернуть">
                                 </div>
                             </button>
-                            <div class="currency-content">
+                            <div class="currency-content" id="currencyDropdown">
                                 <div class="currency-content__flex">
-                                    Текущий курс
-                                    $1 = 97,63 ₽
+                                    <div class="currency-course">
+                                        <div class="currency-course__text">Текущий курс</div>
+                                        <div class="currency-course__current">$1 = 97,63 ₽</div>
+                                    </div>
                                     <div class="switcher">
                                         <input class="switcher__input" id="switcherInput" type="checkbox" name="switcherInput">
                                         <label class="switcher__label" for="switcherInput">
@@ -78,12 +80,9 @@
                                         </label>
                                     </div>
                                 </div>
-
-                                Вы также можете оплатить заказ в долларах на наш валютный счет в Корею через SWIFT
-
-                                Комиссия оплачивается отправителем
-
-                                Узнать больше об оплате
+                                <div class="currency__text">Вы также можете оплатить заказ в долларах на наш валютный счет в Корею через SWIFT</div>
+                                <div class="currency__commission">Комиссия оплачивается отправителем</div>
+                                <a href="#" class="currency__link">Узнать больше об оплате</a>
                             </div>
                         </div>
                     </div>
