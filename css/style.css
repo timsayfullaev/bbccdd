@@ -747,6 +747,12 @@ template {
   font-size: 14px;
   font-weight: 700;
 }
+.currency-button__icon {
+  transition: all 0.25s;
+}
+.currency-button_active .currency-button__icon {
+  transform: rotate(-180deg);
+}
 .currency-content {
   padding: 24px;
   width: 390px;

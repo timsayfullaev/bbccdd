@@ -1,32 +1,21 @@
 // CURRENCY BEGIN
-const currencyButton = document.getElementById('currencyButton');
-const currencyDropdown = document.getElementById('currencyDropdown');
-
-currencyButton.addEventListener('click', () => {
+function currencyDropdown() {
+    const currency = document.querySelector( '.currency');
+    const currencyButton = document.querySelector('.currency-button');
+    const currencyContent = document.querySelector('.currency-content');
     
-});
+    currencyButton.classList.toggle('currency-button_active');
+    currencyContent.classList.toggle('currency-content_active');
 
-//---------------------------------------------------------------------------------
+    document.addEventListener('click', (e) => {
+        const withinBoundaries = e.composedPath().includes(currency);
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        if (!withinBoundaries) {
+            currencyButton.classList.remove('currency-button_active');
+            currencyContent.classList.remove('currency-content_active');
         }
-      }
-    }
-  }
+    });
+};
 // CURRENCY END
 
 // COUNTER BEGIN

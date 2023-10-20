@@ -19,6 +19,14 @@
             font-size: 14px;
             font-weight: 700;
         }
+        &__icon {
+            transition: all .25s;
+        }
+        &_active {
+            .currency-button__icon {
+                transform: rotate(-180deg);
+            }
+        }
     }
     &-content {
         padding: 24px;
