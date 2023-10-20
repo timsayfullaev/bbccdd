@@ -116,6 +116,40 @@
                 }
             }
         }
+        &-title {
+            display: flex;
+            gap: 8px;
+            &__text {
+                font-family: 'Geologica';
+                font-size: 32px;
+                font-weight: 500;
+            }
+            &__count {
+                color: $text_grey;
+                font-weight: 600;
+            }
+        }
+        &-subcategories {
+            margin-top: 24px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        &-subcategory {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            text-decoration: none;
+            &__text {
+                color: $text_secondary;
+                font-weight: 600;
+            }
+            &__count {
+                color: $text_grey;
+                font-size: 14px;
+            }
+        }
     }
     &-footer {
         display: flex;
