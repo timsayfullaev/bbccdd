@@ -1117,6 +1117,10 @@ template {
   color: #DB0053;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.25s;
+}
+.product__brand:hover {
+  color: #BA0047;
 }
 .product__weight {
   color: #949494;
@@ -1132,6 +1136,10 @@ template {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: all 0.25s;
+}
+.product-name__eng:hover {
+  color: #DB0053;
 }
 .product-name__ru {
   color: #303030;
