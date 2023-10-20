@@ -648,6 +648,9 @@ template {
 .nav-catalog-category:hover .nav-catalog-category__text {
   color: #DB0053;
 }
+.nav-catalog__submenu {
+  display: none;
+}
 .nav-catalog-title {
   display: flex;
   gap: 8px;
@@ -705,6 +708,10 @@ template {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.nav-catalog-menu__item:hover .nav-catalog__submenu {
+  display: block;
 }
 
 .dropdown {
@@ -771,7 +778,7 @@ template {
 }
 .currency-button__flex {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   gap: 6px;
 }
 .currency-button__text {

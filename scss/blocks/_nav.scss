@@ -116,6 +116,9 @@
                 }
             }
         }
+        &__submenu {
+            display: none;
+        }
         &-title {
             display: flex;
             gap: 8px;
@@ -174,5 +177,11 @@
             font-weight: 600;
             text-decoration: none;
         }
+    }
+}
+
+.nav-catalog-menu__item:hover {
+    .nav-catalog__submenu {
+        display: block;
     }
 }
