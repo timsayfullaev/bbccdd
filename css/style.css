@@ -493,6 +493,9 @@ template {
   position: relative;
 }
 
+.header {
+  position: relative;
+}
 .header-top {
   padding: 8px 0;
   background: #F5F7F9;
@@ -599,6 +602,10 @@ template {
   justify-content: space-between;
   width: 100%;
 }
+.nav-categories__icon {
+  width: 15px;
+  height: 15px;
+}
 .nav-categories__link {
   display: flex;
   align-items: center;
@@ -607,53 +614,39 @@ template {
   font-size: 14px;
   text-wrap: nowrap;
 }
-.nav-catalog {
-  padding: 24px 0 60px 0;
-  border-radius: 0px 0px 18px 18px;
-  background: #FFFFFF;
-}
 .nav-catalog__flex {
   display: flex;
   justify-content: space-between;
 }
-.nav-catalog__wrapper {
-  border-right: 1px solid #E8E8E8;
+.nav-catalog__categories {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding-right: 60px;
 }
-.nav-catalog-categories {
+.nav-catalog-menu {
   list-style-type: none;
 }
-.nav-catalog-categories__link {
-  text-decoration: none;
+.nav-catalog-category {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 12px;
+  text-decoration: none;
+  padding: 8px 12px;
 }
-.nav-catalog-categories__icon {
-  width: 24px;
-  height: 24px;
-}
-.nav-catalog-categories__text {
-  display: flex;
-  align-items: baseline;
+.nav-catalog-category__text {
   font-family: "Geologica";
   font-weight: 500;
-  gap: 8px;
-}
-.nav-catalog-categories__count {
-  color: #949494;
-  font-family: "Nunito Sans";
-  font-size: 14px;
-  font-weight: 400;
-}
-.nav-catalog__products {
   display: flex;
-  flex-direction: column;
+  align-items: baseline;
   gap: 8px;
+  transition: all 0.25s;
+}
+.nav-catalog-category__count {
+  color: #949494;
+  font-size: 14px;
+}
+.nav-catalog-category:hover .nav-catalog-category__text {
+  color: #DB0053;
 }
 .nav-footer {
   display: flex;
@@ -940,7 +933,7 @@ template {
 .button_tab {
   border-radius: 40px;
   background: #F5F7F9;
-  border-color: #F5F7F9;
+  border-color: #E8E8E8;
   color: #1E1E1E;
 }
 .button_tab:hover {

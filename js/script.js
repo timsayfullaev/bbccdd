@@ -18,6 +18,10 @@ function currencyDropdown() {
 };
 // CURRENCY END
 
+// CATALOG BEGIN
+
+// CATALOG END
+
 // COUNTER BEGIN
 function increaseCounter(a, b) {
     let input = b.previousElementSibling;

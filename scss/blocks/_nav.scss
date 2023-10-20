@@ -66,6 +66,10 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        &__icon {
+            width: 15px;
+            height: 15px;
+        }
         &__link {
             display: flex;
             align-items: center;
@@ -76,51 +80,41 @@
         }
     }
     &-catalog {
-        padding: 24px 0 60px 0;
-        border-radius: 0px 0px 18px 18px;
-        background: $white;
         &__flex {
             display: flex;
             justify-content: space-between;
         }
-        &__wrapper {
-            border-right: 1px solid $line;
+        &__categories {
             display: flex;
             flex-direction: column;
             gap: 18px;
-            padding-right: 60px;
         }
-        &-categories {
+        &-menu {
             list-style-type: none;
-            &__link {
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                padding: 10px 12px;
-            }
-            &__icon {
-                width: 24px;
-                height: 24px;
-            }
+        }
+        &-category {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            padding: 8px 12px;
             &__text {
-                display: flex;
-                align-items: baseline;
                 font-family: 'Geologica';
                 font-weight: 500;
+                display: flex;
+                align-items: baseline;
                 gap: 8px;
+                transition: all .25s;
             }
             &__count {
                 color: $text_grey;
-                font-family: 'Nunito Sans';
                 font-size: 14px;
-                font-weight: 400;
             }
-        }
-        &__products {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
+            &:hover {
+                .nav-catalog-category__text {
+                    color: $brand;
+                }
+            }
         }
     }
     &-footer {
