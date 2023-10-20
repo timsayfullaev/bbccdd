@@ -540,6 +540,10 @@ template {
 .nav-menu__link {
   font-size: 14px;
   text-decoration: none;
+  transition: all 0.25s;
+}
+.nav-menu__link:hover {
+  color: #DB0053;
 }
 .nav-user {
   list-style-type: none;
@@ -688,6 +692,7 @@ template {
   align-items: center;
   gap: 4px;
   transition: all 0.25s;
+  cursor: pointer;
 }
 .dropdown__icon {
   transition: all 0.25s;
