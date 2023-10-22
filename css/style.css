@@ -478,6 +478,174 @@ template {
   font-style: normal;
   font-display: swap;
 }
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sf-menu li {
+  position: relative;
+}
+
+.sf-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.sf-menu > li {
+  float: left;
+}
+
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+  display: block;
+}
+
+.sf-menu a {
+  display: block;
+  position: relative;
+}
+
+.sf-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+  float: left;
+  margin-bottom: 1em;
+}
+
+.sf-menu ul {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  min-width: 12em; /* allow long menu items to determine submenu width */
+  *width: 12em; /* no auto sub width for IE7, see white-space comment below */
+}
+
+.sf-menu a {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 0.75em 1em;
+  text-decoration: none;
+  zoom: 1; /* IE7 */
+}
+
+.sf-menu a {
+  color: #13a;
+}
+
+.sf-menu li {
+  background: #BDD2FF;
+  white-space: nowrap; /* no need for Supersubs plugin */
+  *white-space: normal; /* ...unless you support IE7 (let it wrap) */
+  transition: background 0.2s;
+}
+
+.sf-menu ul li {
+  background: #AABDE6;
+}
+
+.sf-menu ul ul li {
+  background: #9AAEDB;
+}
+
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+  background: #CFDEFF;
+  /* only transition out, not in */
+  transition: none;
+}
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+  padding-right: 2.5em;
+  *padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  margin-top: -3px;
+  height: 0;
+  width: 0;
+  /* order of following 3 rules important for fallbacks to work */
+  border: 5px solid transparent;
+  border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+  border-top-color: rgba(255, 255, 255, 0.5);
+}
+
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+  border-top-color: white; /* IE8 fallback colour */
+}
+
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+  margin-top: -5px;
+  margin-right: -3px;
+  border-color: transparent;
+  border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+  border-left-color: rgba(255, 255, 255, 0.5);
+}
+
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+  border-left-color: white;
+}
+
+/* adding sf-vertical class in addition to sf-menu creates a vertical menu */
+/* eg. <ul class="sf-menu sf-vertical"> ... */
+.sf-vertical {
+  width: 12em;
+  /* If you want the width of the closed menu to expand to its
+  widest top-level menu item (like its "Supersubs" submenus do),
+  replace the width rule above with the following two rules. */
+  /*
+  min-width: 12em;
+  *width: 12em;
+  */
+}
+
+.sf-vertical ul {
+  left: 100%;
+  top: 0;
+}
+
+.sf-vertical > li {
+  float: none;
+}
+
+.sf-vertical li {
+  width: 100%;
+}
+
+/*** alter arrow directions ***/
+.sf-vertical.sf-arrows > li > .sf-with-ul:after {
+  margin-top: -5px;
+  margin-right: -3px;
+  border-color: transparent;
+  border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+  border-left-color: rgba(255, 255, 255, 0.5);
+}
+
+.sf-vertical.sf-arrows li > .sf-with-ul:focus:after,
+.sf-vertical.sf-arrows li:hover > .sf-with-ul:after,
+.sf-vertical.sf-arrows .sfHover > .sf-with-ul:after {
+  border-left-color: white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -614,77 +782,6 @@ template {
   font-size: 14px;
   text-wrap: nowrap;
 }
-.nav-catalog__flex {
-  display: flex;
-  justify-content: space-between;
-}
-.nav-catalog__categories {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.nav-catalog-menu {
-  list-style-type: none;
-}
-.nav-catalog-category {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  padding: 8px 12px;
-}
-.nav-catalog-category__text {
-  font-family: "Geologica";
-  font-weight: 500;
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  transition: all 0.25s;
-}
-.nav-catalog-category__count {
-  color: #949494;
-  font-size: 14px;
-}
-.nav-catalog-category:hover .nav-catalog-category__text {
-  color: #DB0053;
-}
-.nav-catalog__submenu {
-  display: none;
-}
-.nav-catalog-title {
-  display: flex;
-  gap: 8px;
-}
-.nav-catalog-title__text {
-  font-family: "Geologica";
-  font-size: 32px;
-  font-weight: 500;
-}
-.nav-catalog-title__count {
-  color: #949494;
-  font-weight: 600;
-}
-.nav-catalog-subcategories {
-  margin-top: 24px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.nav-catalog-subcategory {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  text-decoration: none;
-}
-.nav-catalog-subcategory__text {
-  color: #303030;
-  font-weight: 600;
-}
-.nav-catalog-subcategory__count {
-  color: #949494;
-  font-size: 14px;
-}
 .nav-footer {
   display: flex;
   gap: 82px;
@@ -708,10 +805,6 @@ template {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-}
-
-.nav-catalog-menu__item:hover .nav-catalog__submenu {
-  display: block;
 }
 
 .dropdown {

@@ -79,81 +79,6 @@
             text-wrap: nowrap;
         }
     }
-    &-catalog {
-        &__flex {
-            display: flex;
-            justify-content: space-between;
-        }
-        &__categories {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-        &-menu {
-            list-style-type: none;
-        }
-        &-category {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-            padding: 8px 12px;
-            &__text {
-                font-family: 'Geologica';
-                font-weight: 500;
-                display: flex;
-                align-items: baseline;
-                gap: 8px;
-                transition: all .25s;
-            }
-            &__count {
-                color: $text_grey;
-                font-size: 14px;
-            }
-            &:hover {
-                .nav-catalog-category__text {
-                    color: $brand;
-                }
-            }
-        }
-        &__submenu {
-            display: none;
-        }
-        &-title {
-            display: flex;
-            gap: 8px;
-            &__text {
-                font-family: 'Geologica';
-                font-size: 32px;
-                font-weight: 500;
-            }
-            &__count {
-                color: $text_grey;
-                font-weight: 600;
-            }
-        }
-        &-subcategories {
-            margin-top: 24px;
-            list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
-        &-subcategory {
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-            text-decoration: none;
-            &__text {
-                color: $text_secondary;
-                font-weight: 600;
-            }
-            &__count {
-                color: $text_grey;
-                font-size: 14px;
-            }
-        }
-    }
     &-footer {
         display: flex;
         gap: 82px;
@@ -177,11 +102,5 @@
             font-weight: 600;
             text-decoration: none;
         }
-    }
-}
-
-.nav-catalog-menu__item:hover {
-    .nav-catalog__submenu {
-        display: block;
     }
 }
