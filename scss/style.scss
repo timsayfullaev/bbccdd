@@ -1,13 +1,9 @@
 @import 'libs/normalize';
 @import 'libs/fonts';
-@import 'libs/superfish';
-@import 'libs/superfish-vertical';
 
 @import 'variables';
 @import 'mixins';
 @import 'base';
-
-@import 'blocks/superfish';
 
 @import 'blocks/header';
 @import 'blocks/location';
@@ -24,3 +20,15 @@
 @import 'blocks/counter';
 @import 'blocks/product';
 @import 'blocks/footer';
+
+.tab--active {
+    border: 1px solid red;
+}
+
+.content {
+    display: none;
+}
+
+.content--active {
+    display: block;
+}
