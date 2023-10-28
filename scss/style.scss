@@ -1,34 +1,7 @@
-@import 'libs/normalize';
+@import 'libs/bootstrap.min';
 @import 'libs/fonts';
 
 @import 'variables';
 @import 'mixins';
 @import 'base';
-
-@import 'blocks/header';
-@import 'blocks/location';
-@import 'blocks/nav';
-@import 'blocks/dropdown';
-@import 'blocks/currency';
-@import 'blocks/switcher';
-@import 'blocks/logo';
-@import 'blocks/button';
-@import 'blocks/input';
-@import 'blocks/search';
-@import 'blocks/title';
-@import 'blocks/tag';
-@import 'blocks/counter';
-@import 'blocks/product';
-@import 'blocks/footer';
-
-.tab--active {
-    border: 1px solid red;
-}
-
-.content {
-    display: none;
-}
-
-.content--active {
-    display: block;
-}
+@import 'custom';

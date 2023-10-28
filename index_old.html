@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI kit</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__flex">
+                    <div class="location">
+                        <img class="location__icon" src="icons/desktop/header/location.svg" alt="Локация">
+                        <div class="location__text">г. Нижний Новгород</div>
+                    </div>
+                    <div class="header-top__right">
+                        <nav class="nav">
+                            <ul class="nav-menu">
+                                <li class="nav-menu__item">
+                                    <a href="#" class="nav-menu__link">О компании</a>
+                                </li>
+                                <li class="nav-menu__item">
+                                    <a href="#" class="nav-menu__link">Доставка и оплата</a>
+                                </li>
+                                <li class="nav-menu__item">
+                                    <a href="#" class="nav-menu__link">Гарантии и возврат</a>
+                                </li>
+                                <li class="nav-menu__item">
+                                    <div class="dropdown">
+                                        <button class="dropdown__button">Помощь
+                                            <img class="dropdown__icon" src="icons/desktop/header/dropdown.svg" alt="Развернуть">
+                                        </button>
+                                        <div class="dropdown__wrapper">
+                                            <div class="dropdown__links">
+                                                <a href="#" class="dropdown__link">Контакты</a>
+                                                <a href="#" class="dropdown__link">Поддержка</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-menu__item">
+                                    <div class="dropdown">
+                                        <button class="dropdown__button">Партнёрам
+                                            <img class="dropdown__icon" src="icons/desktop/header/dropdown.svg" alt="Развернуть">
+                                        </button>
+                                        <div class="dropdown__wrapper">
+                                            <div class="dropdown__links">
+                                                <a href="#" class="dropdown__link">Прайс Box</a>
+                                                <a href="#" class="dropdown__link">Выкуп Coupang</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="currency">
+                            <button class="currency-button" onclick="currencyDropdown()">
+                                <img class="currency-button__flag" src="icons/desktop/header/usd.svg" alt="USD">
+                                <div class="currency-button__flex">
+                                    <div class="currency-button__text">USD</div>
+                                    <img class="currency-button__icon" src="icons/desktop/header/dropdown_currency.svg" alt="Развернуть">
+                                </div>
+                            </button>
+                            <div class="currency-content">
+                                <div class="currency-content__flex">
+                                    <div class="currency-course">
+                                        <div class="currency-course__text">Текущий курс</div>
+                                        <div class="currency-course__current">$1 = 97,63 ₽</div>
+                                    </div>
+                                    <div class="switcher">
+                                        <input class="switcher__input" id="switcherInput" type="checkbox" name="switcherInput">
+                                        <label class="switcher__label" for="switcherInput">
+                                            <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="currency__text">Вы также можете оплатить заказ в долларах на наш валютный счет в Корею через SWIFT</div>
+                                <div class="currency__commission">Комиссия оплачивается отправителем</div>
+                                <a href="#" class="currency__link">Узнать больше об оплате</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-primary">
+                <a href="#" class="logo">
+                    <img class="logo__image" src="img/logo.svg" alt="bbccdd">
+                    опт корейской косметики
+                </a>
+                <div class="header-primary__center">
+                    <button class="button button_catalog">
+                        <img class="button__icon" src="icons/desktop/header/catalog.svg" alt="Каталог">
+                        Каталог
+                    </button>
+                    <form action="#" class="search">
+                        <div class="input">
+                            <input type="text" class="input__field input__field_search" placeholder="Введите название товара, бренд, артикул или штрихкод">
+                        </div>
+                        <button type="submit" class="button button_search">
+                            <img class="serach__icon" src="icons/desktop/header/search.svg" alt="Найти">
+                        </button>
+                    </form>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-user">
+                        <li class="nav-user__item">
+                            <a href="#" class="nav-user__link">
+                                <div class="nav-user__wrapper">
+                                    <img src="icons/desktop/header/profile.svg" alt="Профиль" class="nav-user__icon">
+                                </div>
+                                Тимур
+                            </a>
+                        </li>
+                        <li class="nav-user__item">
+                            <a href="#" class="nav-user__link">
+                                <div class="nav-user__wrapper">
+                                    <img src="icons/desktop/header/heart.svg" alt="Профиль" class="nav-user__icon">
+                                    <div class="nav-user__counter">22</div>
+                                </div>
+                                Избранное
+                            </a>
+                        </li>
+                        <li class="nav-user__item">
+                            <a href="#" class="nav-user__link">
+                                <div class="nav-user__wrapper">
+                                    <img src="icons/desktop/header/cart.svg" alt="Корзина" class="nav-user__icon">
+                                    <div class="nav-user__counter">16</div>
+                                </div>
+                                <div class="nav-user-total">
+                                    <div class="nav-user-total__sum">$67,03</div>
+                                    <div class="nav-user-total__weight">107,50 кг</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-secondary">
+                <nav class="nav">
+                    <ul class="nav-categories">
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Бренды
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Лицо
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Макияж
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Пробники
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Волосы
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Парфюм
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Тело
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                На каждый день
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Аксессуары
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Наборы
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Детям
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Мужчинам
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Новинки
+                            </a>
+                        </li>
+                        <li class="nav-categories__item">
+                            <a href="#" class="nav-categories__link">
+                                <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-categories__icon">
+                                Распродажа
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <ul class="container--tabs">
+            <li class="tab tab--active">Первая</li>
+            <li class="tab">Вторая</li>
+        </ul>
+         
+        <div class="container--content">
+            <div class="content content--active">
+                содержимое первой вкладки
+            </div> 
+            <div class="content">
+                содержимое второй вкладки
+            </div>
+        </div>
+
+    </header>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <form action="#" class="search">
+            <div class="input">
+                <input type="text" class="input__field input__field_search" placeholder="Введите название товара, бренд, артикул или штрихкод">
+            </div>
+            <button type="submit" class="button button_search">
+                <img class="serach__icon" src="icons/desktop/header/search.svg" alt="Найти">
+            </button>
+        </form>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <div class="container">
+        <div class="switcher">
+            <input class="switcher__input" id="switcherInput" type="checkbox" name="switcherInput">
+            <label class="switcher__label" for="switcherInput">
+                <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
+            </label>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <button class="button">Кнопка</button>
+        <a href="#" class="button">Ссылка</a>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <button class="button button_outline">Кнопка</button>
+        <a href="#" class="button button_outline">Ссылка</a>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <button class="button button_outline button_pill">Кнопка <span class="button__quantity">350</span></button>
+        <a href="#" class="button button_outline button_pill">Ссылка <span class="button__quantity">350</span></a>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <button class="button button_tab button_pill">Таб кнопка</button>
+        <a href="#" class="button button_tab button_pill">Таб ссылка</a>
+        <button class="button button_tab button_pill button_active">Таб кнопка активный</button>
+        <a href="#" class="button button_tab button_pill button_active">Таб ссылка активный</a>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="input">
+            <input type="text" class="input__field" placeholder="Введите текст">
+        </div>
+        <br>
+        <div class="input">
+            <input type="text" class="input__field" value="Какой-то текст">
+        </div>
+        <br>
+        <div class="input">
+            <input type="text" class="input__field input__field_error" placeholder="Введите текст">
+            <div class="input__error">Текст ошибки</div>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <h1 class="title">Главный заголовок</h1>
+        <br>
+        <h1 class="title title_large">Большой заголовок</h1>
+        <br>
+        <h1 class="title title_medium">Средний заголовок</h1>
+        <br>
+        <h1 class="title title_small">Маленький заголовок</h1>
+        <br>
+        <h1 class="title title_center">Заголовок по центру</h1>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="tag tag_new">Новинка</div>
+        <div class="tag tag_hit">Хит</div>
+        <div class="tag tag_sale">–30%</div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="counter">
+            <button class="counter__button" onClick='decreaseCounter(event, this)'>
+                <img src="icons/minus.svg" alt="Минус" class="counter__icon">
+            </button>
+            <input type="text" value="0" class="counter__input">
+            <button class="counter__button" onClick='increaseCounter(event, this)'>
+                <img src="icons/plus.svg" alt="Плюс" class="counter__icon">
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="container">
+        <article class="product">
+            <div class="product__wrapper">
+                <div class="product__header">
+                    <a href="#">
+                        <img class="product__image" src="img/product.jpg" alt="Продукт">
+                    </a>
+                    <div class="tag tag_new tag_absolute">Новинка</div>
+                    <img class="product__favorite" src="icons/favorite/heart.svg" alt="В избранное">
+                </div>
+                <div class="product__body">
+                    <div class="product__flex">
+                        <a href="#" class="product__brand">LEBELAGE</a>
+                        <div class="product__weight">1083 г</div>
+                    </div>
+                    <div class="product-name">
+                        <a href="#" class="product-name__eng">MEDI-PEEL DERMA MAISON SENSINOL CONTROL SERUM (50ml) [EXP 06/2024]</a>
+                        <div class="product-name__ru">Увлажняющий лосьон для тела с экстрактами персика и яблоко (1000мл)</div>
+                    </div>
+                    <div class="product-cost">
+                        <div class="product-cost__price">1 240 ₽</div>
+                        <div class="product-cost__discount">
+                            <div class="product-cost__old-price">2 340 ₽</div>
+                            <div class="tag tag_sale">–30%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <div class="counter">
+                        <button class="counter__button" onClick='decreaseCounter(event, this)'>
+                            <img src="icons/minus.svg" alt="Минус" class="counter__icon">
+                        </button>
+                        <input type="text" value="0" class="counter__input">
+                        <button class="counter__button" onClick='increaseCounter(event, this)'>
+                            <img src="icons/plus.svg" alt="Плюс" class="counter__icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="product product_horizontal">
+            <div class="product__wrapper">
+                <div class="product__header">
+                    <a href="#">
+                        <img class="product__image" src="img/product.jpg" alt="Продукт">
+                    </a>
+                    <div class="tag tag_new tag_absolute">Новинка</div>
+                    <img class="product__favorite" src="icons/favorite/heart.svg" alt="В избранное">
+                </div>
+                <div class="product__body">
+                    <div class="product__flex">
+                        <a href="#" class="product__brand">LEBELAGE</a>
+                        <div class="product__weight">1083 г</div>
+                    </div>
+                    <div class="product-name">
+                        <a href="#" class="product-name__eng">MEDI-PEEL DERMA MAISON SENSINOL CONTROL SERUM (50ml) [EXP 06/2024]</a>
+                        <div class="product-name__ru">Увлажняющий лосьон для тела с экстрактами персика и яблоко (1000мл)</div>
+                    </div>
+                    <div class="product-cost">
+                        <div class="product-cost__price">1 240 ₽</div>
+                        <div class="product-cost__discount">
+                            <div class="product-cost__old-price">2 340 ₽</div>
+                            <div class="tag tag_sale">–30%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="product product_vertical">
+            <div class="product__wrapper">
+                <div class="product__header">
+                    <a href="#">
+                        <img class="product__image" src="img/product.jpg" alt="Продукт">
+                    </a>
+                    <div class="tag tag_new tag_absolute">Новинка</div>
+                    <img class="product__favorite" src="icons/favorite/heart.svg" alt="В избранное">
+                </div>
+                <div class="product__body">
+                    <div class="product__flex">
+                        <a href="#" class="product__brand">LEBELAGE</a>
+                        <div class="product__weight">1083 г</div>
+                    </div>
+                    <div class="product-name">
+                        <a href="#" class="product-name__eng">MEDI-PEEL DERMA MAISON SENSINOL CONTROL SERUM (50ml) [EXP 06/2024]</a>
+                        <div class="product-name__ru">Увлажняющий лосьон для тела с экстрактами персика и яблоко (1000мл)</div>
+                    </div>
+                    <div class="product-cost">
+                        <div class="product-cost__price">1 240 ₽</div>
+                        <div class="product-cost__discount">
+                            <div class="product-cost__old-price">2 340 ₽</div>
+                            <div class="tag tag_sale">–30%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <footer class="footer">
+        <div class="footer-primary">
+            <div class="container">
+                <div class="footer-primary__flex">
+                    <nav class="nav">
+                        <div class="nav-footer">
+                            <div class="nav-footer__wrapper">
+                                <div class="nav-footer__title">Каталог</div>
+                                <div class="nav-footer__flex">
+                                    <div class="nav-footer__menu">
+                                        <a href="#" class="nav-footer__link">Лицо</a>
+                                        <a href="#" class="nav-footer__link">Макияж</a>
+                                        <a href="#" class="nav-footer__link">Тело</a>
+                                        <a href="#" class="nav-footer__link">Волосы</a>
+                                        <a href="#" class="nav-footer__link">Наборы</a>
+                                        <a href="#" class="nav-footer__link">Аксессуары</a>
+                                    </div>
+                                    <div class="nav-footer__menu">
+                                        <a href="#" class="nav-footer__link">Пробники</a>
+                                        <a href="#" class="nav-footer__link">Парфюм</a>
+                                        <a href="#" class="nav-footer__link">Корейские товары</a>
+                                        <a href="#" class="nav-footer__link">Для детей</a>
+                                        <a href="#" class="nav-footer__link">Для мужчин</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-footer__wrapper">
+                                <div class="nav-footer__title">Покупателю</div>
+                                <div class="nav-footer__menu">
+                                    <a href="#" class="nav-footer__link">Доставка</a>
+                                    <a href="#" class="nav-footer__link">Оплата и сотрудничество</a>
+                                    <a href="#" class="nav-footer__link">Гарантии и возврат</a>
+                                    <a href="#" class="nav-footer__link">Вопросы и ответы</a>
+                                    <a href="#" class="nav-footer__link">Отзывы</a>
+                                    <a href="#" class="nav-footer__link">Сертификаты</a>
+                                </div>
+                            </div>
+                            <div class="nav-footer__wrapper">
+                                <div class="nav-footer__title">О нас</div>
+                                <div class="nav-footer__menu">
+                                    <a href="#" class="nav-footer__link">О компании</a>
+                                    <a href="#" class="nav-footer__link">Контакты</a>
+                                    <a href="#" class="nav-footer__link">Выкуп Coupang</a>
+                                    <a href="#" class="nav-footer__link">Прайс Box</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="footer__contacts">
+                        <div class="footer-social">
+                            <a href="#" class="footer-social__link">
+                                <img src="icons/social/telegram.svg" alt="Telegram" class="footer-social__icon">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="icons/social/instagram.svg" alt="Instagram" class="footer-social__icon">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="icons/social/facebook.svg" alt="Facebook" class="footer-social__icon">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="icons/social/vk.svg" alt="VK" class="footer-social__icon">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="icons/social/ok.svg" alt="OK" class="footer-social__icon">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="icons/social/youtube.svg" alt="YouTube" class="footer-social__icon">
+                            </a>
+                            <a href="#" class="footer-social__link">
+                                <img src="icons/social/tiktok.svg" alt="TikTok" class="footer-social__icon">
+                            </a>
+                        </div>
+                        <div class="footer-contact">
+                            <a href="https://t.me/bbccdd_support" class="footer-contact__link">@bbccdd_support</a>
+                            <div class="footer-contact__text">Служба поддержки в Telegram</div>
+                        </div>
+                        <div class="footer-contact">
+                            <a href="mailto:info@bbccdd.ru" class="footer-contact__link">info@bbccdd.ru</a>
+                            <div class="footer-contact__text">Почта по всем вопросам</div>
+                        </div>
+                        <div class="footer__address">
+                            11, Toegye-ro 56-gil, Jung-gu, Seoul, South Korea
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-secondary">
+                <div class="footer-payments">
+                    <img src="icons/payment/yoomoney.svg" alt="ЮMoney" class="footer-payments__icon">
+                    <img src="icons/payment/sber.svg" alt="SberPay" class="footer-payments__icon">
+                    <img src="icons/payment/alfa.svg" alt="Альфа-Банк" class="footer-payments__icon">
+                    <img src="icons/payment/mir.svg" alt="Мир" class="footer-payments__icon">
+                    <img src="icons/payment/visa.svg" alt="Visa" class="footer-payments__icon">
+                    <img src="icons/payment/mastercard.svg" alt="Mastercard" class="footer-payments__icon">
+                    <img src="icons/payment/maestro.svg" alt="Maestro" class="footer-payments__icon">
+                    <img src="icons/payment/unionpay.svg" alt="UnionPay" class="footer-payments__icon">
+                    <img src="icons/payment/paypal.svg" alt="PayPal" class="footer-payments__icon">
+                    <img src="icons/payment/western.svg" alt="Western Union" class="footer-payments__icon">
+                    <img src="icons/payment/usdt.svg" alt="USDT" class="footer-payments__icon">
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Политика конфиденциальности и оферта</a>
+                    <a href="#" class="footer__link">Пользовательское соглашение</a>
+                </div>
+            </div>
+            <div class="footer__copyright">© LB Industrial Trading, 2016-2023</div>
+        </div>
+    </footer>
+
+    <script src="js/libs/jquery-3.7.1.min.js"></script>
+    <script src="js/libs/hoverIntent.js"></script>
+    <script src="js/libs/superfish.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
