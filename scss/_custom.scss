@@ -1,0 +1,129 @@
+.btn {
+    &_primary {
+        padding: 11px 48px;
+        border-radius: 8px;
+        background: $brand;
+        color: $white;
+        font-weight: 700;
+        border-color: $brand;
+        &:hover {
+            background: $brand_hover;
+            color: $white;
+            border-color: $brand_hover;
+        }
+        &:active {
+            background: $brand_active !important;
+            color: $white !important;
+            border-color: $brand_active !important;
+        }
+    }
+    &_outline {
+        padding: 11px 48px;
+        border-radius: 8px;
+        border: 1.5px solid $brand;
+        color: $brand;
+        font-weight: 700;
+        &:hover {
+            border-color: $brand_hover;
+            color: $brand_hover;
+        }
+        &:active {
+            border-color: $brand_active !important;
+            color: $brand_active !important;
+        }
+    }
+    &_icon {
+        padding: 11px 24px;
+        border-radius: 8px;
+        background: $brand;
+        color: $white;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        &:hover {
+            background: $brand_hover;
+            color: $white;
+            border-color: $brand_hover;
+        }
+        &:active {
+            background: $brand_active !important;
+            color: $white !important;
+            border-color: $brand_active !important;
+        }
+    }
+    &_rounded {
+        padding: 11px 24px;
+        border-radius: 30px;
+        border: 1.5px solid $brand;
+        color: $brand;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        &:hover {
+            border-color: $brand_hover;
+            color: $brand_hover;
+        }
+        &:active {
+            border-color: $brand_active !important;
+            color: $brand_active !important;
+        }
+        span {
+            color: rgba($brand, .5);
+        }
+    }
+    &_tab {
+        padding: 11px 24px;
+        border-radius: 40px;
+        background: $background_grey_light;
+        color: $text_primary;
+        font-weight: 700;
+        border-color: $background_grey_light;
+        &:hover {
+            background: $background_grey_dark;
+            color: $text_primary;
+            border-color: $background_grey_dark;
+        }
+        &:active {
+            background: $success !important;
+            color: $white !important;
+            border-color: $success !important;
+        }
+        &-active {
+            background: $success !important;
+            color: $white !important;
+            border-color: $success !important;            
+        }
+    }
+}
+
+.form-control {
+    &_input {
+        padding: 13px 20px;
+        border-radius: 8px;
+        border: 1.5px solid $line;
+        background: $white;
+        color: $text_primary;
+        font-size: 14px;
+        box-shadow: none !important;
+        &::placeholder {
+            color: $text_grey;
+        }
+        &:hover {
+            border-color: rgba($success, .5);
+        }
+        &:focus {
+            border-color: $success;
+        }
+        &-error {
+            border-color: $error;
+        }
+    }
+}
+
+.form-text {
+    &_error {
+        color: $error;
+    }
+}

@@ -12181,4 +12181,131 @@ textarea.form-control-lg {
 * {
   font-family: "Nunito Sans";
   color: #1E1E1E;
+}
+
+.btn_primary {
+  padding: 11px 48px;
+  border-radius: 8px;
+  background: #DB0053;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-color: #DB0053;
+}
+.btn_primary:hover {
+  background: #BA0047;
+  color: #FFFFFF;
+  border-color: #BA0047;
+}
+.btn_primary:active {
+  background: #99003C !important;
+  color: #FFFFFF !important;
+  border-color: #99003C !important;
+}
+.btn_outline {
+  padding: 11px 48px;
+  border-radius: 8px;
+  border: 1.5px solid #DB0053;
+  color: #DB0053;
+  font-weight: 700;
+}
+.btn_outline:hover {
+  border-color: #BA0047;
+  color: #BA0047;
+}
+.btn_outline:active {
+  border-color: #99003C !important;
+  color: #99003C !important;
+}
+.btn_icon {
+  padding: 11px 24px;
+  border-radius: 8px;
+  background: #DB0053;
+  color: #FFFFFF;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn_icon:hover {
+  background: #BA0047;
+  color: #FFFFFF;
+  border-color: #BA0047;
+}
+.btn_icon:active {
+  background: #99003C !important;
+  color: #FFFFFF !important;
+  border-color: #99003C !important;
+}
+.btn_rounded {
+  padding: 11px 24px;
+  border-radius: 30px;
+  border: 1.5px solid #DB0053;
+  color: #DB0053;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.btn_rounded:hover {
+  border-color: #BA0047;
+  color: #BA0047;
+}
+.btn_rounded:active {
+  border-color: #99003C !important;
+  color: #99003C !important;
+}
+.btn_rounded span {
+  color: rgba(219, 0, 83, 0.5);
+}
+.btn_tab {
+  padding: 11px 24px;
+  border-radius: 40px;
+  background: #F5F7F9;
+  color: #1E1E1E;
+  font-weight: 700;
+  border-color: #F5F7F9;
+}
+.btn_tab:hover {
+  background: #E5EAEE;
+  color: #1E1E1E;
+  border-color: #E5EAEE;
+}
+.btn_tab:active {
+  background: #41BBBB !important;
+  color: #FFFFFF !important;
+  border-color: #41BBBB !important;
+}
+.btn_tab-active {
+  background: #41BBBB !important;
+  color: #FFFFFF !important;
+  border-color: #41BBBB !important;
+}
+
+.form-control_input {
+  padding: 13px 20px;
+  border-radius: 8px;
+  border: 1.5px solid #E8E8E8;
+  background: #FFFFFF;
+  color: #1E1E1E;
+  font-size: 14px;
+  box-shadow: none !important;
+}
+.form-control_input::-moz-placeholder {
+  color: #949494;
+}
+.form-control_input::placeholder {
+  color: #949494;
+}
+.form-control_input:hover {
+  border-color: rgba(65, 187, 187, 0.5);
+}
+.form-control_input:focus {
+  border-color: #41BBBB;
+}
+.form-control_input-error {
+  border-color: #DE0923;
+}
+
+.form-text_error {
+  color: #DE0923;
 }/*# sourceMappingURL=style.css.map */

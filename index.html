@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UI kit</title>
+    <title>UI Kit</title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -15,8 +15,31 @@
 
     </header>
 
-    <div class="container">
-        123
+    <div class="container py-5">
+        <button class="btn btn_primary">Подписаться</button>
+        <br><br>
+        <button class="btn btn_outline">Перейти в каталог</button>
+        <br><br>
+        <button class="btn btn_icon">
+            <img src="icons/desktop/header/catalog.svg" alt="Каталог">
+            Каталог
+        </button>
+        <br><br>
+        <button class="btn btn_rounded">
+            Смотреть все
+            <span>350</span>
+        </button>
+        <br><br>
+        <button class="btn btn_tab">Daandan Bit</button>
+        <br><br>
+        <button class="btn btn_tab btn_tab-active">Daandan Bit</button>
+    </div>
+
+    <div class="container py-5">
+        <input type="text" class="form-control form-control_input" placeholder="Введите свой email">
+        <br>
+        <input type="text" class="form-control form-control_input form-control_input-error" placeholder="Введите свой email">
+        <div class="form-text form-text_error">Текст ошибки</div>
     </div>
 
     <footer class="footer">
