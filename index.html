@@ -16,37 +16,6 @@
     </header>
 
     <div class="container py-4">
-        <button class="btn btn_primary">Подписаться</button>
-        <hr>
-        <button class="btn btn_outline">Перейти в каталог</button>
-        <hr>
-        <button class="btn btn_icon">
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            Каталог
-        </button>
-        <button class="btn btn_icon">
-            <div class="hamburger hamburger_active">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            Каталог
-        </button>
-        <hr>
-        <button class="btn btn_rounded">
-            Смотреть все
-            <span>350</span>
-        </button>
-        <hr>
-        <button class="btn btn_tab">Daandan Bit</button>
-        <button class="btn btn_tab btn_tab-active">Daandan Bit</button>
-    </div>
-
-    <div class="container py-4">
         <div class="switcher">
             <input class="switcher__input" id="switcherInput" type="checkbox" name="switcherInput">
             <label class="switcher__label" for="switcherInput">
@@ -83,6 +52,49 @@
                 </div>
                 <a href="#" class="dropdown-menu__more">Узнать больше об оплате</a>
             </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <button class="btn btn_primary">Подписаться</button>
+        <hr>
+        <button class="btn btn_outline">Перейти в каталог</button>
+        <hr>
+        <button class="btn btn_icon">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            Каталог
+        </button>
+        <button class="btn btn_icon">
+            <div class="hamburger hamburger_active">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            Каталог
+        </button>
+        <hr>
+        <button class="btn btn_rounded">
+            Смотреть все
+            <span>350</span>
+        </button>
+        <hr>
+        <button class="btn btn_tab">Daandan Bit</button>
+        <button class="btn btn_tab btn_tab-active">Daandan Bit</button>
+    </div>
+
+    <div class="container py-4">
+        <div class="counter">
+            <button class="counter__button" onClick='decreaseCounter(event, this)'>
+                <img src="icons/minus.svg" alt="Минус" class="counter__icon">
+            </button>
+            <input type="text" value="0" class="counter__input">
+            <button class="counter__button" onClick='increaseCounter(event, this)'>
+                <img src="icons/plus.svg" alt="Плюс" class="counter__icon">
+            </button>
         </div>
     </div>
 
