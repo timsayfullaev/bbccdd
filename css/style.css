@@ -12190,6 +12190,35 @@ a:hover {
   color: #BA0047;
 }
 
+.nav-link_top {
+  color: #1E1E1E;
+  font-size: 14px;
+  padding: 5px 9px;
+}
+.nav-link_top:hover {
+  color: #DB0053;
+}
+.nav-link_top:focus {
+  color: #DB0053;
+}
+
+.dropdown-toggle_top {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.dropdown-toggle_top::after {
+  display: none;
+}
+.dropdown-toggle_top:focus {
+  color: #1E1E1E;
+}
+.dropdown-toggle_top.show {
+  color: #DB0053;
+}
+.dropdown-toggle_top.show .dropdown-toggle__icon {
+  transform: rotate(-180deg);
+}
 .dropdown-toggle_currency {
   padding: 5px 12px;
   border-radius: 8px;
@@ -12199,16 +12228,30 @@ a:hover {
   align-items: center;
   gap: 8px;
 }
-.dropdown-toggle_currency span {
-  color: #1E1E1E;
-  font-size: 14px;
-  font-weight: 700;
-}
 .dropdown-toggle_currency::after {
   display: none;
 }
 .dropdown-toggle_currency.show .dropdown-toggle__icon {
   transform: rotate(-180deg);
+}
+.dropdown-toggle__flex {
+  color: #1E1E1E;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.dropdown-toggle__flex span {
+  margin-top: 2px;
+}
+.dropdown-menu_top {
+  width: 180px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 14px;
 }
 .dropdown-menu_currency {
   width: 390px;
@@ -12240,6 +12283,19 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   margin-top: 16px;
+}
+.dropdown-item_top {
+  color: #1E1E1E;
+  font-size: 14px;
+  padding: 6px;
+}
+.dropdown-item_top:hover {
+  color: #DB0053;
+  background: none;
+}
+.dropdown-item_top:focus {
+  color: #DB0053;
+  background: none;
 }
 
 .btn_primary {
@@ -12369,18 +12425,6 @@ a:hover {
   color: #DE0923;
 }
 
-.nav-link_top {
-  color: #1E1E1E;
-  font-size: 14px;
-  padding: 5px 9px;
-}
-.nav-link_top:hover {
-  color: #DB0053;
-}
-.nav-link_top:focus {
-  color: #DB0053;
-}
-
 .header__top {
   padding: 7px 0;
   background: #F5F7F9;
@@ -12397,7 +12441,7 @@ a:hover {
 .header__right {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 15px;
 }
 
 .hamburger div {

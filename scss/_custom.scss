@@ -1,5 +1,38 @@
+.nav {
+    &-link {
+        &_top {
+            color: $text_primary;
+            font-size: 14px;
+            padding: 5px 9px;
+            &:hover {
+                color: $brand;
+            }
+            &:focus {
+                color: $brand;
+            }
+        }
+    }
+}
+
 .dropdown {
     &-toggle {
+        &_top {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            &::after {
+                display: none;
+            }
+            &:focus {
+                color: $text_primary;
+            }
+            &.show {
+                color: $brand;
+                .dropdown-toggle__icon {
+                    transform: rotate(-180deg);
+                }
+            } 
+        }
         &_currency {
             padding: 5px 12px;
             border-radius: 8px;
@@ -8,11 +41,6 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            span {
-                color: $text_primary;
-                font-size: 14px;
-                font-weight: 700;
-            }
             &::after {
                 display: none;
             }
@@ -22,8 +50,27 @@
                 }
             }
         }
+        &__flex {
+            color: $text_primary;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            span {
+                margin-top: 2px;
+            }
+        }
     }
     &-menu {
+        &_top {
+            width: 180px;
+            border-radius: 8px;
+            background: $white;
+            @include box-shadow;
+            border: none;
+            padding: 14px;         
+        }
         &_currency {
             width: 390px;
             border-radius: 18px;
@@ -54,6 +101,21 @@
             text-decoration: none;
             display: inline-block;
             margin-top: 16px;
+        }
+    }
+    &-item {
+        &_top {
+            color: $text_primary;
+            font-size: 14px;
+            padding: 6px;
+            &:hover {
+                color: $brand;
+                background: none;
+            }
+            &:focus {
+                color: $brand;
+                background: none;
+            }
         }
     }
 }
@@ -185,21 +247,5 @@
 .form-text {
     &_error {
         color: $error;
-    }
-}
-
-.nav {
-    &-link {
-        &_top {
-            color: $text_primary;
-            font-size: 14px;
-            padding: 5px 9px;
-            &:hover {
-                color: $brand;
-            }
-            &:focus {
-                color: $brand;
-            }
-        }
     }
 }
