@@ -4,6 +4,9 @@
         background: $background_grey_light;
     }
     &-location {
+        border: none;
+        background: none;
+        padding: 0;
         display: flex;
         align-items: flex-start;
         gap: 8px;
