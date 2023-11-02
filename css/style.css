@@ -12447,24 +12447,6 @@ a:hover {
   gap: 15px;
 }
 
-.hamburger div {
-  width: 18px;
-  height: 2px;
-  background-color: #FFFFFF;
-  margin: 3px 0;
-  transition: all 0.25s;
-  border-radius: 2px;
-}
-.hamburger_active div:nth-child(1) {
-  transform: translate(0, 5px) rotate(-45deg);
-}
-.hamburger_active div:nth-child(2) {
-  opacity: 0;
-}
-.hamburger_active div:nth-child(3) {
-  transform: translate(0, -5px) rotate(45deg);
-}
-
 .switcher {
   width: 158px;
   height: 48px;
@@ -12520,6 +12502,28 @@ a:hover {
   position: absolute;
   justify-content: center;
   transition: all 0.25s;
+}
+
+.hamburger div {
+  width: 18px;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin: 3px 0;
+  transition: all 0.25s;
+  border-radius: 2px;
+}
+.hamburger_active div:nth-child(1) {
+  transform: translate(0, 5px) rotate(-45deg);
+}
+.hamburger_active div:nth-child(2) {
+  opacity: 0;
+}
+.hamburger_active div:nth-child(3) {
+  transform: translate(0, -5px) rotate(45deg);
+}
+
+.search {
+  position: relative;
 }
 
 .counter {
