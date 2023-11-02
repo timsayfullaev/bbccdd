@@ -12431,7 +12431,7 @@ a:hover {
 }
 .header-location {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
 }
 .header-location__text {
