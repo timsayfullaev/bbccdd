@@ -12,7 +12,72 @@
 
 <body>
     <header class="header">
-
+        <div class="header__top">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="header-location">
+                        <img src="icons/desktop/header/location.svg" alt="Местоположение" class="header-location__icon">
+                        <div class="header-location__text">г. Нижний Новгород</div>
+                    </div>
+                    <div class="header__right">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link_top" href="#">О компании</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link_top" href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link_top" href="#">Гарантии и возврат</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-link_top dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Помощь</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                    <li><a class="dropdown-item" href="#">Поддержка</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link nav-link_top dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Партнёрам</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Прайс Box</a></li>
+                                    <li><a class="dropdown-item" href="#">Выкуп Coupang</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle dropdown-toggle_currency" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <img src="icons/desktop/header/usd.svg" alt="Доллар США">
+                                <span>USD</span>
+                                <img src="icons/desktop/header/dropdown_currency.svg" alt="Развернуть" class="dropdown-toggle__icon">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu_currency">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <div class="dropdown-menu__current">Текущий курс</div>
+                                        <div class="dropdown-menu__course">$1 = 97,63 ₽</div>
+                                    </div>
+                                    <div class="switcher">
+                                        <input class="switcher__input" id="switcherInput1" type="checkbox" name="switcherInput1">
+                                        <label class="switcher__label" for="switcherInput1">
+                                            <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu__description">
+                                    Вы также можете оплатить заказ в долларах на наш валютный счет в Корею через SWIFT
+                                </div>
+                                <div class="dropdown-menu__commission">
+                                    Комиссия оплачивается отправителем
+                                </div>
+                                <a href="#" class="dropdown-menu__more">Узнать больше об оплате</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"></div>
     </header>
 
     <div class="container py-4">
@@ -22,9 +87,7 @@
                 <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
             </label>
         </div>
-    </div>
-
-    <div class="container py-4">
+        <hr>
         <div class="dropdown">
             <button class="dropdown-toggle dropdown-toggle_currency" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 <img src="icons/desktop/header/usd.svg" alt="Доллар США">
@@ -38,8 +101,8 @@
                         <div class="dropdown-menu__course">$1 = 97,63 ₽</div>
                     </div>
                     <div class="switcher">
-                        <input class="switcher__input" id="switcherCurrency" type="checkbox" name="switcherCurrency">
-                        <label class="switcher__label" for="switcherCurrency">
+                        <input class="switcher__input" id="switcherInput1" type="checkbox" name="switcherInput1">
+                        <label class="switcher__label" for="switcherInput1">
                             <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
                         </label>
                     </div>

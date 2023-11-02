@@ -12369,6 +12369,37 @@ a:hover {
   color: #DE0923;
 }
 
+.nav-link_top {
+  color: #1E1E1E;
+  font-size: 14px;
+  padding: 5px 9px;
+}
+.nav-link_top:hover {
+  color: #DB0053;
+}
+.nav-link_top:focus {
+  color: #DB0053;
+}
+
+.header__top {
+  padding: 7px 0;
+  background: #F5F7F9;
+}
+.header-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-location__text {
+  font-size: 14px;
+  font-weight: 700;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .hamburger div {
   width: 18px;
   height: 2px;

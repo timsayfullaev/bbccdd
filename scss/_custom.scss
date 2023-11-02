@@ -187,3 +187,19 @@
         color: $error;
     }
 }
+
+.nav {
+    &-link {
+        &_top {
+            color: $text_primary;
+            font-size: 14px;
+            padding: 5px 9px;
+            &:hover {
+                color: $brand;
+            }
+            &:focus {
+                color: $brand;
+            }
+        }
+    }
+}

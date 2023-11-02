@@ -1,0 +1,20 @@
+.header {
+    &__top {
+        padding: 7px 0;
+        background: $background_grey_light;
+    }
+    &-location {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &__text {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+}
