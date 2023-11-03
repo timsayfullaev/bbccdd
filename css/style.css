@@ -12395,6 +12395,11 @@ a:hover {
   color: #FFFFFF !important;
   border-color: #41BBBB !important;
 }
+.btn_search {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 .form-control_input {
   padding: 13px 20px;
@@ -12445,6 +12450,43 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+.header__middle {
+  padding: 14px 0 17px 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+}
+.header-logo__text {
+  font-size: 12px;
+  font-weight: 600;
+  background: linear-gradient(0deg, #68002B 27.27%, #DB0053 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .switcher {
@@ -12524,6 +12566,7 @@ a:hover {
 
 .search {
   position: relative;
+  width: 100%;
 }
 
 .counter {
