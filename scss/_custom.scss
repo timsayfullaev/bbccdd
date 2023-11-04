@@ -26,14 +26,6 @@
             }
         }
     }
-    &_categories {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        gap: 17px;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
 }
 
 .dropdown {
