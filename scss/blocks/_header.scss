@@ -10,6 +10,11 @@
         display: flex;
         align-items: flex-start;
         gap: 8px;
+        &:hover {
+            .header-location__text {
+                color: $brand;
+            }
+        }
         &__text {
             font-size: 14px;
             font-weight: 700;
@@ -57,6 +62,11 @@
         align-items: center;
         gap: 6px;
         text-decoration: none;
+        &:hover {
+            .header-link__text {
+                color: $brand;
+            }
+        }
         &__icon {
             position: relative;
         }
