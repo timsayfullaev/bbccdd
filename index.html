@@ -338,17 +338,18 @@
     </footer>
 
     <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="locationModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div>Выбор города</div>
-                    
-                    <div>От города зависят стоимость и время доставки вашего заказа</div>
-                    
+        <div class="modal-dialog modal-dialog-centered modal-dialog_custom">
+            <div class="modal-content modal-content_custom">
+                <div class="modal-body modal-body_custom">
+                    <button type="button" class="btn-close btn-close_modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal__title">Выбор города</div>
+                    <div class="modal__note">От города зависят стоимость и время доставки вашего заказа</div>
+                    <form action="#" class="search">
+                        <input type="text" class="form-control form-control_input form-control_search" placeholder="Поиск города">
+                        <button class="btn btn_search">
+                            <img src="icons/desktop/header/search.svg" alt="Поиск">
+                        </button>
+                    </form>
                     <div>Москва и область</div>
                     <div>Казань</div>
                     <div>Омск</div>
@@ -370,10 +371,6 @@
                     <div>Иркутск</div>
                     <div>Новосибирск</div>
                     <div>Томск</div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>

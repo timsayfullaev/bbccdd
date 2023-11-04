@@ -12416,6 +12416,15 @@ a:hover {
   top: 0;
   right: 0;
 }
+.btn-close_modal {
+  font-size: 20px;
+  color: #1E1E1E;
+  opacity: 1;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 10px;
+}
 
 .form-control_input {
   padding: 13px 20px;
@@ -12450,6 +12459,17 @@ a:hover {
 
 .form-text_error {
   color: #DE0923;
+}
+
+.modal-dialog_custom {
+  max-width: 660px;
+}
+.modal-content_custom {
+  border-radius: 18px;
+  background: #FFFFFF;
+}
+.modal-body_custom {
+  padding: 50px 60px;
 }
 
 .header__top {

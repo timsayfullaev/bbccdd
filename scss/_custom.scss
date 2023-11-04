@@ -239,6 +239,17 @@
         top: 0;
         right: 0;
     }
+    &-close {
+        &_modal {
+            font-size: 20px;
+            color: $text_primary;
+            opacity: 1;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            padding: 10px;
+        }
+    }
 }
 
 .form-control {
@@ -276,5 +287,24 @@
 .form-text {
     &_error {
         color: $error;
+    }
+}
+
+.modal {
+    &-dialog {
+        &_custom {
+            max-width: 660px;
+        }
+    }
+    &-content {
+        &_custom {
+            border-radius: 18px;
+            background: $white;
+        }        
+    }
+    &-body {
+        &_custom {
+            padding: 50px 60px;
+        }
     }
 }
