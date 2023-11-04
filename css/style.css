@@ -12201,6 +12201,28 @@ a:hover {
 .nav-link_top:focus {
   color: #DB0053;
 }
+.nav-link__icon {
+  width: 15px;
+}
+.nav-link_bottom {
+  color: #1E1E1E;
+  font-size: 14px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-link_bottom:hover, .nav-link_bottom:focus {
+  color: #DB0053;
+}
+.nav_categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 17px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
 
 .dropdown-toggle_top {
   display: flex;
@@ -12536,6 +12558,10 @@ a:hover {
 }
 .header-link__weight {
   color: #949494;
+}
+.header__bottom {
+  height: 21px;
+  overflow-y: hidden;
 }
 
 .switcher {
