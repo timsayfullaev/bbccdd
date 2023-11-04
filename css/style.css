@@ -12396,6 +12396,8 @@ a:hover {
   border-color: #41BBBB !important;
 }
 .btn_search {
+  padding: 11px 18px;
+  border-radius: 8px;
   position: absolute;
   top: 0;
   right: 0;
@@ -12422,8 +12424,14 @@ a:hover {
 .form-control_input:focus {
   border-color: #41BBBB;
 }
-.form-control_input-error {
+.form-control_error {
   border-color: #DE0923;
+}
+.form-control_search:hover {
+  border-color: rgba(219, 0, 83, 0.3);
+}
+.form-control_search:focus {
+  border-color: rgba(219, 0, 83, 0.5);
 }
 
 .form-text_error {
@@ -12487,6 +12495,41 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
+}
+.header-link__icon {
+  position: relative;
+}
+.header-link__count {
+  width: 22px;
+  height: 22px;
+  background: #DB0053;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+.header-link__text {
+  font-size: 14px;
+  text-wrap: nowrap;
+}
+.header-link__text_cart {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+.header-link__total {
+  color: #1E1E1E;
+  font-weight: 700;
+}
+.header-link__weight {
+  color: #949494;
 }
 
 .switcher {

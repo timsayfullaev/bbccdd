@@ -219,6 +219,8 @@
         }
     }
     &_search {
+        padding: 11px 18px;
+        border-radius: 8px;
         position: absolute;
         top: 0;
         right: 0;
@@ -243,8 +245,16 @@
         &:focus {
             border-color: $success;
         }
-        &-error {
-            border-color: $error;
+    }
+    &_error {
+        border-color: $error;
+    }
+    &_search {
+        &:hover {
+            border-color: rgba($brand, .3);
+        }
+        &:focus {
+            border-color: rgba($brand, .5)
         }
     }
 }

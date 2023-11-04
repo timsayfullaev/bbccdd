@@ -109,7 +109,7 @@
                         Каталог
                     </button>
                     <form action="#" class="search">
-                        <input type="text" class="form-control form-control_input" placeholder="Введите название товара, бренд, артикул или штрихкод">
+                        <input type="text" class="form-control form-control_input form-control_search" placeholder="Введите название товара, бренд, артикул или штрихкод">
                         <button class="btn btn_search">
                             <img src="icons/desktop/header/search.svg" alt="Поиск">
                         </button>
@@ -117,18 +117,28 @@
                 </div>
                 <div class="header__links">
                     <a href="#" class="header-link">
-                        <img src="icons/desktop/header/profile.svg" alt="Профиль" class="header-link__icon">
-                        <span class="header-link__text">Тимур</span>
+                        <div class="header-link__icon">
+                            <img src="icons/desktop/header/profile.svg" alt="Профиль">
+                        </div>
+                        <div class="header-link__text">Тимур</div>
                     </a>
                     <a href="#" class="header-link">
-                        <img src="icons/desktop/header/heart.svg" alt="Избранное" class="header-link__icon">
-                        <span class="header-link__text">Избранное</span>
-                        <div class="header-link__count">22</div>
+                        <div class="header-link__icon">
+                            <img src="icons/desktop/header/heart.svg" alt="Избранное">
+                            <div class="header-link__count">22</div>
+                        </div>
+                        <div class="header-link__text">Избранное</div>
                     </a>
                     <a href="#" class="header-link">
-                        <img src="icons/desktop/header/cart.svg" alt="Корзина" class="header-link__icon">
-                        <span class="header-link__text">Корзина</span>
-                        <div class="header-link__count">16</div>
+                        <div class="header-link__icon">
+                            <img src="icons/desktop/header/cart.svg" alt="Корзина">
+                            <div class="header-link__count">16</div>
+                        </div>
+                        <!-- <div class="header-link__text">Корзина</div> -->
+                        <div class="header-link__text header-link__text_cart">
+                            <div class="header-link__total">$67,03</div>
+                            <div class="header-link__weight">107,50 кг</div>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -173,6 +183,15 @@
                 <a href="#" class="dropdown-menu__more">Узнать больше об оплате</a>
             </div>
         </div>
+    </div>
+
+    <div class="container py-4">
+        <form action="#" class="search">
+            <input type="text" class="form-control form-control_input form-control_search" placeholder="Введите название товара, бренд, артикул или штрихкод">
+            <button class="btn btn_search">
+                <img src="icons/desktop/header/search.svg" alt="Поиск">
+            </button>
+        </form>
     </div>
 
     <div class="container py-4">
@@ -221,7 +240,7 @@
     <div class="container py-4">
         <input type="text" class="form-control form-control_input" placeholder="Введите свой email">
         <hr>
-        <input type="text" class="form-control form-control_input form-control_input-error" placeholder="Введите свой email">
+        <input type="text" class="form-control form-control_input form-control_error" placeholder="Введите свой email">
         <div class="form-text form-text_error">Текст ошибки</div>
     </div>
 
