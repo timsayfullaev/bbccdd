@@ -12471,6 +12471,29 @@ a:hover {
 .modal-body_custom {
   padding: 50px 60px;
 }
+.modal__title {
+  color: #1E1E1E;
+  font-family: "Geologica";
+  font-size: 32px;
+  font-weight: 500;
+}
+.modal__note {
+  color: #303030;
+  margin-top: 10px;
+}
+.modal__cities {
+  margin-top: 32px;
+}
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal__city {
+  color: #303030;
+  font-weight: 600;
+  text-decoration: none;
+}
 
 .header__top {
   padding: 7px 0;
@@ -12650,6 +12673,9 @@ a:hover {
 .search {
   position: relative;
   width: 100%;
+}
+.search_location {
+  margin-top: 32px;
 }
 
 .counter {

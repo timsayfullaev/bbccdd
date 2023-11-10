@@ -307,4 +307,27 @@
             padding: 50px 60px;
         }
     }
+    &__title {
+        color: $text_primary;
+        font-family: 'Geologica';
+        font-size: 32px;
+        font-weight: 500;
+    }
+    &__note {
+        color: $text_secondary;
+        margin-top: 10px;
+    }
+    &__cities {
+        margin-top: 32px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &__city {
+        color: $text_secondary;
+        font-weight: 600;
+        text-decoration: none;
+    }
 }
