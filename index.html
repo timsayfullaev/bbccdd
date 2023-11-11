@@ -17,7 +17,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <button type="button" class="header-location" data-bs-toggle="modal" data-bs-target="#locationModal">
                         <img src="icons/desktop/header/location.svg" alt="Местоположение" class="header-location__icon">
-                        <div class="header-location__text">г. Нижний Новгород</div>
+                        <span class="header-location__text">г. Нижний Новгород</span>
                     </button>
                     <div class="header__right">
                         <ul class="nav">
@@ -62,10 +62,10 @@
                         <div class="dropdown">
                             <button class="dropdown-toggle dropdown-toggle_currency" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                 <img src="icons/desktop/header/usd.svg" alt="Доллар США">
-                                <div class="dropdown-toggle__flex">
+                                <span class="dropdown-toggle__flex">
                                     <span>USD</span>
                                     <img src="icons/desktop/header/dropdown_currency.svg" alt="Развернуть" class="dropdown-toggle__icon">
-                                </div>
+                                </span>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end dropdown-menu_currency">
                                 <div class="d-flex justify-content-between align-items-center">
@@ -76,7 +76,7 @@
                                     <div class="switcher">
                                         <input class="switcher__input" id="switcherInputCurrency" type="checkbox" name="switcherInputCurrency">
                                         <label class="switcher__label" for="switcherInputCurrency">
-                                            <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
+                                            <span class="switcher__slider" data-unchecked="USD" data-checked="RUB"></span>
                                         </label>
                                     </div>
                                 </div>
@@ -101,11 +101,11 @@
                 </a>
                 <div class="header__center">
                     <button class="btn btn_icon">
-                        <div class="hamburger">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
+                        <span class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
                         Каталог
                     </button>
                     <form action="#" class="search">
@@ -231,23 +231,30 @@
                 </ul>
             </div>
         </div>
+        <div class="header__overlay">
+            <div class="header-catalog">
+                <div class="container">
+                    
+                </div>
+            </div>
+        </div>
     </header>
 
     <div class="container py-4">
         <div class="switcher">
             <input class="switcher__input" id="switcherInput" type="checkbox" name="switcherInput">
             <label class="switcher__label" for="switcherInput">
-                <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
+                <span class="switcher__slider" data-unchecked="USD" data-checked="RUB"></span>
             </label>
         </div>
         <hr>
         <div class="dropdown">
             <button class="dropdown-toggle dropdown-toggle_currency" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 <img src="icons/desktop/header/usd.svg" alt="Доллар США">
-                <div class="dropdown-toggle__flex">
+                <span class="dropdown-toggle__flex">
                     <span>USD</span>
                     <img src="icons/desktop/header/dropdown_currency.svg" alt="Развернуть" class="dropdown-toggle__icon">
-                </div>
+                </span>
             </button>
             <div class="dropdown-menu dropdown-menu-end dropdown-menu_currency">
                 <div class="d-flex justify-content-between align-items-center">
@@ -258,7 +265,7 @@
                     <div class="switcher">
                         <input class="switcher__input" id="switcherInput1" type="checkbox" name="switcherInput1">
                         <label class="switcher__label" for="switcherInput1">
-                            <div class="switcher__slider" data-unchecked="USD" data-checked="RUB"></div>
+                            <span class="switcher__slider" data-unchecked="USD" data-checked="RUB"></span>
                         </label>
                     </div>
                 </div>
@@ -288,19 +295,19 @@
         <button class="btn btn_outline">Перейти в каталог</button>
         <hr>
         <button class="btn btn_icon">
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <span class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
             Каталог
         </button>
         <button class="btn btn_icon">
-            <div class="hamburger hamburger_active">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <span class="hamburger hamburger_active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
             Каталог
         </button>
         <hr>
@@ -337,7 +344,7 @@
 
     </footer>
 
-    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog_custom">
             <div class="modal-content modal-content_custom">
                 <div class="modal-body modal-body_custom">

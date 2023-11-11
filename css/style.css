@@ -12623,6 +12623,7 @@ a:hover {
   border: 1px solid #E8E8E8;
   font-size: 14px;
   font-weight: 700;
+  display: block;
 }
 .switcher__input + .switcher__label > .switcher__slider:before {
   background-color: #41BBBB;
@@ -12656,21 +12657,22 @@ a:hover {
   transition: all 0.25s;
 }
 
-.hamburger div {
+.hamburger span {
   width: 18px;
   height: 2px;
   background-color: #FFFFFF;
   margin: 3px 0;
   transition: all 0.25s;
   border-radius: 2px;
+  display: block;
 }
-.hamburger_active div:nth-child(1) {
+.hamburger_active span:nth-child(1) {
   transform: translate(0, 5px) rotate(-45deg);
 }
-.hamburger_active div:nth-child(2) {
+.hamburger_active span:nth-child(2) {
   opacity: 0;
 }
-.hamburger_active div:nth-child(3) {
+.hamburger_active span:nth-child(3) {
   transform: translate(0, -5px) rotate(45deg);
 }
 

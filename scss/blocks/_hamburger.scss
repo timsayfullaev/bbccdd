@@ -1,20 +1,21 @@
 .hamburger {
-    div {
+    span {
         width: 18px;
         height: 2px;
         background-color: $white;
         margin: 3px 0;
         transition: all .25s;
         border-radius: 2px;
+        display: block;
     }
     &_active {
-        div:nth-child(1) {
+        span:nth-child(1) {
             transform: translate(0, 5px) rotate(-45deg);
         }
-        div:nth-child(2) {
+        span:nth-child(2) {
             opacity: 0;
         }
-        div:nth-child(3) {
+        span:nth-child(3) {
             transform: translate(0, -5px) rotate(45deg);
         }
     }

@@ -19,6 +19,7 @@
                 border: 1px solid $line;
                 font-size: 14px;
                 font-weight: 700;
+				display: block;
 				&:before {
 					background-color: $success;
 					color: $white;
