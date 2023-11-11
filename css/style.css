@@ -12416,6 +12416,9 @@ a:hover {
   top: 0;
   right: 0;
 }
+.btn_search:active {
+  border-color: transparent !important;
+}
 .btn-close_modal {
   font-size: 20px;
   color: #1E1E1E;
@@ -12424,6 +12427,9 @@ a:hover {
   top: 24px;
   right: 24px;
   padding: 10px;
+}
+.btn-close_modal:focus {
+  box-shadow: none;
 }
 
 .form-control_input {
