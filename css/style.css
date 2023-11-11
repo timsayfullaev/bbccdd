@@ -12489,11 +12489,9 @@ a:hover {
 }
 .modal__cities {
   margin-top: 32px;
-}
-.modal__list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 12px;
 }
 .modal__city {
   color: #303030;

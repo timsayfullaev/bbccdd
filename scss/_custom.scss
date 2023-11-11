@@ -325,11 +325,9 @@
     }
     &__cities {
         margin-top: 32px;
-    }
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        row-gap: 12px;
     }
     &__city {
         color: $text_secondary;
