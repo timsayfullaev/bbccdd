@@ -22,10 +22,27 @@
                 }
             }
         }
+        &_tab {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 8px;
+            &:hover {
+                background: $background_pink;
+                .nav-link__icon_expand {
+                    opacity: 1;
+                }
+            }
+        }
         &__icon {
             width: 15px;
             &_menu {
                 width: 24px;
+            }
+            &_expand {
+                width: 18px;
+                transform: rotate(-90deg);
+                opacity: 0;
+                transition: all .15s;
             }
         }
         &__category {
