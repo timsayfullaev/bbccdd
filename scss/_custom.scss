@@ -11,8 +11,31 @@
                 color: $brand;
             }
         }
+        &_category {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 9px;
+            &:hover {
+                .nav-link__category {
+                    color: $brand;
+                }
+            }
+        }
         &__icon {
             width: 15px;
+            &_menu {
+                width: 24px;
+            }
+        }
+        &__category {
+            color: $text_primary;
+            font-family: 'Geologica';
+            font-weight: 500;
+        }
+        &__count {
+            color: $text_grey;
+            font-size: 14px;
         }
         &_bottom {
             color: $text_primary;
@@ -25,6 +48,9 @@
                 color: $brand;
             }
         }
+    }
+    &_categories {
+        flex-direction: column;
     }
 }
 

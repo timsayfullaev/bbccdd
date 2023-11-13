@@ -231,41 +231,156 @@
                 </ul>
             </div>
         </div>
+        <hr>
         <div class="header__overlay">
             <div class="header-catalog">
                 <div class="container">
                     <div class="d-flex justify-content-between">
-                        <div class="header-catalog__categories">
-                            <ul class="nav flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                            </ul>
-                            <div class="d-flex align-items-start">
-                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-                                        type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
-                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                                        type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                        <div class="header-catalog__left">
+                            <div class="header-catalog__categories">
+                                <ul class="nav nav_categories">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link_category" href="#">
+                                            <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                            <span class="nav-link__category">Новинки</span>
+                                            <span class="nav-link__count">133</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link_category" href="#">
+                                            <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                            <span class="nav-link__category">Хиты</span>
+                                            <span class="nav-link__count">100</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link_category" href="#">
+                                            <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                            <span class="nav-link__category">Распродажа</span>
+                                            <span class="nav-link__count">46</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link_category" href="#">
+                                            <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                            <span class="nav-link__category">Бренды</span>
+                                            <span class="nav-link__count">333</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="nav nav_categories" id="categories-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link nav-link_category" href="#">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Весь каталог</span>
+                                        <span class="nav-link__count">6 675</span>
+                                    </a>
+                                    <button class="nav-link nav-link_category active" id="categories-face-tab" data-bs-toggle="pill" data-bs-target="#categories-face" type="button" role="tab" aria-controls="categories-face" aria-selected="true">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Лицо</span>
+                                        <span class="nav-link__count">3 938</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-makeup-tab" data-bs-toggle="pill" data-bs-target="#categories-makeup" type="button" role="tab" aria-controls="categories-makeup" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Макияж</span>
+                                        <span class="nav-link__count">843</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-body-tab" data-bs-toggle="pill" data-bs-target="#categories-body" type="button" role="tab" aria-controls="categories-body" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Тело</span>
+                                        <span class="nav-link__count">529</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-hair-tab" data-bs-toggle="pill" data-bs-target="#categories-hair" type="button" role="tab" aria-controls="categories-hair" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Волосы</span>
+                                        <span class="nav-link__count">460</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-sets-tab" data-bs-toggle="pill" data-bs-target="#categories-sets" type="button" role="tab" aria-controls="categories-sets" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Наборы</span>
+                                        <span class="nav-link__count">329</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-accessories-tab" data-bs-toggle="pill" data-bs-target="#categories-accessories" type="button" role="tab" aria-controls="categories-accessories" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Аксессуары</span>
+                                        <span class="nav-link__count">74</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-probes-tab" data-bs-toggle="pill" data-bs-target="#categories-probes" type="button" role="tab" aria-controls="categories-probes" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Пробники</span>
+                                        <span class="nav-link__count">173</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-perfume-tab" data-bs-toggle="pill" data-bs-target="#categories-perfume" type="button" role="tab" aria-controls="categories-perfume" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Парфюм</span>
+                                        <span class="nav-link__count">49</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-korean-tab" data-bs-toggle="pill" data-bs-target="#categories-korean" type="button" role="tab" aria-controls="categories-korean" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Корейские товары</span>
+                                        <span class="nav-link__count">129</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-kids-tab" data-bs-toggle="pill" data-bs-target="#categories-kids" type="button" role="tab" aria-controls="categories-kids" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Детям</span>
+                                        <span class="nav-link__count">71</span>
+                                    </button>
+                                    <button class="nav-link nav-link_category" id="categories-men-tab" data-bs-toggle="pill" data-bs-target="#categories-men" type="button" role="tab" aria-controls="categories-men" aria-selected="false">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Мужчинам</span>
+                                        <span class="nav-link__count">80</span>
+                                    </button>
+                                    <a class="nav-link nav-link_category" href="#">
+                                        <img src="icons/desktop/header/category.svg" alt="Категория" class="nav-link__icon nav-link__icon_menu">
+                                        <span class="nav-link__category">Скачать весь каталог в Excel</span>
+                                    </a>
                                 </div>
-                                <div class="tab-content" id="v-pills-tabContent">
-                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-                                        tabindex="0">Home</div>
-                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-                                        tabindex="0">Profile</div>
+                            </div>
+                            <div class="header-catalog__subcategories">
+                                <div class="tab-content" id="categories-tabContent">
+                                    <div class="tab-pane fade show active" id="categories-face" role="tabpanel" aria-labelledby="categories-face-tab" tabindex="0">
+                                        face
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-makeup" role="tabpanel" aria-labelledby="categories-makeup-tab" tabindex="0">
+                                        makeup
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-body" role="tabpanel" aria-labelledby="categories-body-tab" tabindex="0">
+                                        body
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-hair" role="tabpanel" aria-labelledby="categories-hair-tab" tabindex="0">
+                                        hair
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-sets" role="tabpanel" aria-labelledby="categories-sets-tab" tabindex="0">
+                                        sets
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-accessories" role="tabpanel" aria-labelledby="categories-accessories-tab" tabindex="0">
+                                        accessories
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-probes" role="tabpanel" aria-labelledby="categories-probes-tab" tabindex="0">
+                                        probes
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-perfume" role="tabpanel" aria-labelledby="categories-perfume-tab" tabindex="0">
+                                        perfume
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-korean" role="tabpanel" aria-labelledby="categories-korean-tab" tabindex="0">
+                                        korean
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-kids" role="tabpanel" aria-labelledby="categories-kids-tab" tabindex="0">
+                                        kids
+                                    </div>
+                                    <div class="tab-pane fade" id="categories-men" role="tabpanel" aria-labelledby="categories-men-tab" tabindex="0">
+                                        men
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="header-catalog__products">
-products
+                        <div class="header-catalog__right">
+                            products
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <hr>
     </header>
 
     <div class="container py-4">

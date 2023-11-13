@@ -102,4 +102,15 @@
             color: $text_grey;
         }
     }
+    &-catalog {
+        &__left {
+            display: flex;
+            gap: 120px;
+        }
+        &__categories {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+    }
 }

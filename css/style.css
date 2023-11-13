@@ -12201,8 +12201,29 @@ a:hover {
 .nav-link_top:focus {
   color: #DB0053;
 }
+.nav-link_category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 9px;
+}
+.nav-link_category:hover .nav-link__category {
+  color: #DB0053;
+}
 .nav-link__icon {
   width: 15px;
+}
+.nav-link__icon_menu {
+  width: 24px;
+}
+.nav-link__category {
+  color: #1E1E1E;
+  font-family: "Geologica";
+  font-weight: 500;
+}
+.nav-link__count {
+  color: #949494;
+  font-size: 14px;
 }
 .nav-link_bottom {
   color: #1E1E1E;
@@ -12214,6 +12235,9 @@ a:hover {
 }
 .nav-link_bottom:hover, .nav-link_bottom:focus {
   color: #DB0053;
+}
+.nav_categories {
+  flex-direction: column;
 }
 
 .dropdown-toggle_top {
@@ -12597,6 +12621,15 @@ a:hover {
 }
 .header-link__weight {
   color: #949494;
+}
+.header-catalog__left {
+  display: flex;
+  gap: 120px;
+}
+.header-catalog__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .switcher {
